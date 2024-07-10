@@ -56,7 +56,7 @@ try {
                 <html><head></head></head>
 <body style="background-color: #474d80; padding: 45px;">
     <div>
-        <img style="position:relative; left:35%;" src="https://trustronce.com/Trustroncelogo.png">
+        <img style="position:relative; left:35%;" src="https://trustronce.com/trustroncelogo.png">
         <h3 style="color: black;">Mail From support@trustronce.com - Two factor</h3>
     </div>
     <div style="color: #ffff;"><hr/>

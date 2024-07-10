@@ -132,7 +132,7 @@ if (isset($_POST['submit'])) {
                             <div class="col-lg-12">
                                 <div class="login-form">
                                     <div class="d-flex justify-content-center p-3 pb-5">
-                                        <img src="../../Trustroncelogo.png" alt="logo">
+                                        <img src="../../trustroncelogo.png" alt="logo">
                                     </div>
                                     <div class="text-center">
                                         <h1 class="h4 text-black mb-4">KYC Verification</h1>

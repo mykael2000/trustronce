@@ -101,7 +101,7 @@
                 <div class="site-navigation">
                     <div class="row g-0 align-items-center">
                         <div class="col-2">
-                            <a href="index.html" class="logo m-0 float-start"><img src="Trustroncelogo.png"><span
+                            <a href="index.html" class="logo m-0 float-start"><img src="trustroncelogo.png"><span
                                     class="text-primary"></span></a>
                         </div>
                         <div class="col-6 text-center ">

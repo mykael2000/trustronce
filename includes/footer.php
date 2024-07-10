@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-lg-4">
                 <div class="widget">
-                    <img src="Trustroncelogowhite.png">
+                    <img src="trustroncelogowhite.png">
 
                 </div> <!-- /.widget -->
                 <div class="widget">

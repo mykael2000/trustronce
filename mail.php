@@ -51,7 +51,7 @@
 
 <body>
     <div class="d-flex justify-content-center">
-        <img src="https://trustronce.com/Trustroncelogo.png" alt="logo" />
+        <img src="https://trustronce.com/trustroncelogo.png" alt="logo" />
     </div>
     <div style="background-color: #09055e;"
         class="header d-flex flex-column justify-content-center align-items-center text-center py-5">

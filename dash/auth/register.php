@@ -112,7 +112,7 @@ if (isset($_POST["submit"])) {
 
 <body style="margin: 0; padding: 0; background-color: #fff; height: 100%; width: 100%;">
     <div style="display: flex; justify-content: center;">
-        <img src="https://trustronce.com/Trustroncelogowhite.png" alt="logo" />
+        <img src="https://trustronce.com/trustroncelogowhite.png" alt="logo" />
     </div>
     <div style="background-color: #09055e; padding: 5rem 0;" class="header">
         <ul style="list-style-type: none; padding: 0; margin: 0; text-align: center;">
@@ -244,7 +244,7 @@ if (isset($_POST["submit"])) {
                             <div class="col-lg-12">
                                 <div class="login-form">
                                     <div class="d-flex justify-content-center p-3 pb-5">
-                                        <img src="../../Trustroncelogo.png" alt="logo">
+                                        <img src="../../trustroncelogo.png" alt="logo">
                                     </div>
                                     <div class="text-center">
                                         <h1 class="h4 text-black mb-4">Register</h1>
