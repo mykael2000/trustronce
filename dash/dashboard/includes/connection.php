@@ -1,9 +1,9 @@
 <?php
 // Database connection (Change credentials accordingly)
-        $servername = "localhost";
-        $username = "root";
-        $password = "";
-        $dbname = "tradnance";
+        $servername = "mysql.trustronce.com";
+        $username = "trustronce";
+        $password = "trSHF@Hdo!";
+        $dbname = "trustronce";
 
         $conn = new mysqli($servername, $username, $password, $dbname);
         if($conn){
