@@ -1,17 +1,8 @@
 <?php
 include '../dashboard/includes/connection.php';
-session_start();
 ob_start();
-use PHPMailer\PHPMailer\Exception;
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\SMTP;
-//Load Composer's autoloader
+session_start();
 
-require '../PHPMailer-master/src/PHPMailer.php';
-require '../PHPMailer-master/src/Exception.php';
-require '../PHPMailer-master/src/SMTP.php';
-//Create an instance; passing `true` enables exceptions
-$mail = new PHPMailer(true);
 
 if (isset($_POST['submit'])) {
     $email = $_POST['email'];
@@ -29,71 +20,7 @@ if (isset($_POST['submit'])) {
     $result = mysqli_stmt_get_result($stmt);
 
     if ($result->num_rows > 0) {
-        try {
-                //Server settings
-                $mail->SMTPDebug = 0; //Enable verbose debug output
-                $mail->isSMTP(); //Send using SMTP
-                $mail->Host = 'mail.trustronce.com'; //Set the SMTP server to send through
-                $mail->SMTPAuth = true; //Enable SMTP authentication
-                $mail->Username = 'support@trustronce.com'; //SMTP username
-                $mail->Password = 'oc234TaM12!'; //SMTP password
-                $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; //Enable implicit TLS encryption
-                $mail->Port = 465; //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
-
-                //Recipients
-                $mail->setFrom('support@trustronce.com', 'Support');
-                $mail->addAddress($email); //Add a recipient               //Name is optional
-
-                $mail->addCC('support@trustronce.com');
-
-                //Content
-                $mail->isHTML(true); //Set email format to HTML
-                $mail->Subject = 'You just signed in?';
-                $mail->Body = '
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to Octastrem!</title>
-</head>
-
-<body style="margin: 0; padding: 0; background-color: #fff; height: 100%; width: 100%;">
-    <div style="display: flex; justify-content: center;">
-        <img src="https://trustronce.com/octastremlogowhite.png" alt="logo" />
-    </div>
-    <div style="background-color: #09055e; padding: 5rem 0;" class="header">
-        <ul style="list-style-type: none; padding: 0; margin: 0; text-align: center;">
-            <li style="display: inline-block; margin-right: 1rem;">
-                <a style="color: #fff;" href="https://trustronce.com/dash/auth/login.php">My account</a>
-            </li>
-            <li style="display: inline-block; margin-right: 1rem;">
-                <a style="color: #fff;" href="https://trustronce.com/faq.php">FAQ</a>
-            </li>
-            <li style="display: inline-block;">
-                <a style="color: #fff;" href="https://trustronce.com/about.php">About Us</a>
-            </li>
-        </ul>
-    </div>
-    <div style="position: relative; top: -30px; padding-top: 20px; padding-bottom: 20px;" class="container">
-        <h4 style="font-size: 20px; padding-top: 15px; padding-bottom: 5px; color: #1a1a1a; font-family: Aileron; font-weight: 700; word-wrap: break-word;">
-            Hey there, did you just sign into your account?</h4>
-       
-        <h5>A login was just noticed, if you dont recognize this login kindly take precautionary measures.</h5>
-    </div>
-</body>
-
-</html>
-
-
-';
-
-                $mail->send();
-             
-            } catch (Exception $e) {
-                echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
-            }
+        
         $row = mysqli_fetch_assoc($result);
         $_SESSION['username'] = $row['username'];
 
