@@ -1,9 +1,9 @@
 <?php
 // Database connection (Change credentials accordingly)
-        $servername = "mysql.trustronce.com";
-        $username = "trustronce";
+        $servername = "vin101.truehost.cloud";
+        $username = "trustron_trustronce";
         $password = "trSHF@Hdo!";
-        $dbname = "trustronce";
+        $dbname = "trustron_trustronce";
 
         $conn = new mysqli($servername, $username, $password, $dbname);
         if($conn){
