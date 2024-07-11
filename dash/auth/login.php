@@ -27,7 +27,6 @@ if (isset($_POST['submit'])) {
         // Generate a random OTP
         $otp = random_int(1000, 9999); // Use random_int for cryptographically secure random numbers
 
-        echo '<div class="alert alert-success">Login authenticated! Redirecting Now....</div>';
         header("location: ../dashboard/main.php");
 
     } else {
