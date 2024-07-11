@@ -1,6 +1,6 @@
 <?php
 include '../dashboard/includes/connection.php';
-ob_start();
+//ob_start();
 session_start();
 
 
