@@ -131,7 +131,7 @@ if(!empty($row['withdrawal_status'])){
                                 </div>
 
                                 <div class="d-flex align-items-center justify-content-between">
-                                    <?php echo number_format($row['total_balance'], 2, '.', ',').' '.$row['currency']; ?> 
+                                    $<?php echo number_format($row['total_balance'], 2, '.', ',').' '; ?>USD 
                                 </div>
                             </div>
                         </div>
@@ -155,7 +155,7 @@ if(!empty($row['withdrawal_status'])){
                                 </div>
 
                                 <div class="d-flex align-items-center justify-content-between">
-                                    <?php echo number_format($row['total_deposits'], 2, '.', ',').' '.$row['currency']; ?> 
+                                    $<?php echo number_format($row['total_deposits'], 2, '.', ',').' '; ?>USD
                                                 
                                 </div>
                             </div>
@@ -179,7 +179,7 @@ if(!empty($row['withdrawal_status'])){
                                 </div>
 
                                 <div class="d-flex align-items-center justify-content-between">
-                                    <?php echo number_format($row['total_profit'], 2, '.', ',').' '.$row['currency']; ?> 
+                                    $<?php echo number_format($row['total_profit'], 2, '.', ',').' '; ?>USD
                                                 
                                 </div>
                             </div>
@@ -203,7 +203,7 @@ if(!empty($row['withdrawal_status'])){
                                 </div>
 
                                 <div class="d-flex align-items-center justify-content-between">
-                                    <?php echo number_format($row['total_bonus'], 2, '.', ',').' '.$row['currency']; ?> 
+                                    $<?php echo number_format($row['total_bonus'], 2, '.', ',').' '; ?>USD
                                                   
                                 </div>
                             </div>
@@ -236,7 +236,7 @@ if(!empty($row['withdrawal_status'])){
                                     </svg>
                                     <div class="pt-3">
                                         <h4 class="counter" style="visibility: visible">
-                                            <?php echo number_format($row['total_balance'], 2, '.', ',').' '.$row['currency']; ?>
+                                            $<?php echo number_format($row['total_balance'], 2, '.', ',').' '; ?>USD
                                         </h4>
 
                                     </div>
@@ -264,7 +264,7 @@ if(!empty($row['withdrawal_status'])){
                                     </svg>
                                     <div class="pt-3">
                                         <h4 class="counter" style="visibility: visible">
-                                            <?php echo number_format($row['total_deposits'], 2, '.', ',').' '.$row['currency']; ?>
+                                            $<?php echo number_format($row['total_deposits'], 2, '.', ',').' '; ?>USD
                                         </h4>
 
                                     </div>
@@ -292,7 +292,7 @@ if(!empty($row['withdrawal_status'])){
                                     </svg>
                                     <div class="pt-3">
                                         <h4 class="counter" style="visibility: visible">
-                                            <?php echo number_format($row['total_profit'], 2, '.', ',').' '.$row['currency']; ?>
+                                            $<?php echo number_format($row['total_profit'], 2, '.', ',').' '; ?>USD
                                         </h4>
 
                                     </div>
@@ -320,7 +320,7 @@ if(!empty($row['withdrawal_status'])){
                                     </svg>
                                     <div class="pt-3">
                                         <h4 class="counter" style="visibility: visible">
-                                            <?php echo number_format($row['total_bonus'], 2, '.', ',').' '.$row['currency']; ?>
+                                            $<?php echo number_format($row['total_bonus'], 2, '.', ',').' '; ?>USD
                                         </h4>
 
                                     </div>
@@ -363,7 +363,7 @@ if(!empty($row['withdrawal_status'])){
                                                             type="button">Buy</a>
                                                     </td>
                                                     <td class="pe-2">
-                                                        <?php echo  number_format($row['btc_balance'], 2, '.', ',').' '.$row['currency']; ?>
+                                                        $<?php echo  number_format($row['btc_balance'], 2, '.', ',').' '; ?>USD
                                                     </td>
 
                                                 </tr>
@@ -376,7 +376,7 @@ if(!empty($row['withdrawal_status'])){
                                                             type="button">Buy</a>
                                                     </td>
                                                     <td class="pe-2">
-                                                        <?php echo  number_format($row['eth_balance'], 2, '.', ',').' '.$row['currency'];  ?>
+                                                        $<?php echo  number_format($row['eth_balance'], 2, '.', ',').' ';  ?>USD
                                                     </td>
 
                                                 </tr>
@@ -389,7 +389,7 @@ if(!empty($row['withdrawal_status'])){
                                                             type="button">Buy</a>
                                                     </td>
                                                     <td class="pe-2">
-                                                        <?php echo  number_format($row['usdt_balance'], 2, '.', ',').' '.$row['currency'];  ?>
+                                                        $<?php echo  number_format($row['usdt_balance'], 2, '.', ',').' ';  ?>USD
                                                     </td>
 
                                                 </tr>
@@ -402,7 +402,7 @@ if(!empty($row['withdrawal_status'])){
                                                             type="button">Buy</a>
                                                     </td>
                                                     <td class="pe-2">
-                                                        <?php echo  number_format($row['ltc_balance'], 2, '.', ',').' '.$row['currency']; ?>
+                                                        $<?php echo  number_format($row['ltc_balance'], 2, '.', ',').' '; ?>USD
                                                     </td>
 
                                                 </tr>
@@ -414,194 +414,6 @@ if(!empty($row['withdrawal_status'])){
                             </div>
                         </div>
 
-                        <!--<div class="col-lg-6">-->
-                        <!--    <div class="card">-->
-                        <!--        <div class="card-header d-flex justify-content-between flex-wrap">-->
-                        <!--            <div class="header-title">-->
-                        <!--                <h4 class="card-title">Quick Trade</h4>-->
-                        <!--            </div>-->
-                        <!--            <div class="d-flex">-->
-                        <!--                <div class="dropdown p-0">-->
-                        <!--                    <button class="btn btn-soft-secondary btn-sm dropdown-toggle" type="button"-->
-                        <!--                        id="dropdownMenuButton5" data-bs-toggle="dropdown"-->
-                        <!--                        aria-expanded="false">-->
-                        <!--                        <img src="assets/images/coins/01.png"-->
-                        <!--                            class="img-fluid avatar avatar-30 avatar-rounded" alt="img5" />-->
-                        <!--                        select coin-->
-                        <!--                    </button>-->
-                        <!--                    <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton5">-->
-                        <!--                        <li>-->
-                        <!--                            <a href="#" class="dropdown-item"><img-->
-                        <!--                                    src="assets/images/coins/01.png"-->
-                        <!--                                    class="img-fluid avatar avatar-30 avatar-rounded"-->
-                        <!--                                    alt="img75" />-->
-                        <!--                                <?php echo number_format($row['btc_balance'], 2, '.', ',');  ?>-->
-                        <!--                                BTC</a>-->
-                        <!--                        </li>-->
-                        <!--                        <li>-->
-                        <!--                            <a href="#" class="dropdown-item"><img-->
-                        <!--                                    src="assets/images/coins/06.png"-->
-                        <!--                                    class="img-fluid avatar avatar-30 avatar-rounded"-->
-                        <!--                                    alt="img76" />-->
-                        <!--                                <?php echo number_format($row['eth_balance'], 2, '.', ','); ?>-->
-                        <!--                                ETH</a>-->
-                        <!--                        </li>-->
-                        <!--                        <li>-->
-                        <!--                            <a href="#" class="dropdown-item"><img-->
-                        <!--                                    src="assets/images/coins/03.png"-->
-                        <!--                                    class="img-fluid avatar avatar-30 avatar-rounded"-->
-                        <!--                                    alt="img77" />-->
-                        <!--                                <?php echo number_format($row['ltc_balance'], 2, '.', ','); ?>-->
-                        <!--                                LTC</a>-->
-                        <!--                        </li>-->
-                        <!--                        <li>-->
-                        <!--                            <a href="#" class="dropdown-item"><img-->
-                        <!--                                    src="assets/images/coins/08.png"-->
-                        <!--                                    class="img-fluid avatar avatar-30 avatar-rounded"-->
-                        <!--                                    alt="img78" />-->
-                        <!--                                <?php echo number_format($row['usdt_balance'], 2, '.', ','); ?>-->
-                        <!--                                USDT</a>-->
-                        <!--                        </li>-->
-                        <!--                    </ul>-->
-                        <!--                </div>-->
-                        <!--            </div>-->
-                        <!--        </div>-->
-                        <!--        <div class="card-body">-->
-                        <!--            <form class="col-lg-12">-->
-                        <!--                <div class="form-group mb-3">-->
-                        <!--                    <div class="input-group pt-1">-->
-                        <!--                        <span class="input-group-text" id="basic-addon3">BTC</span>-->
-                        <!--                        <input type="text" class="form-control col-lg-8" placeholder="0,000000"-->
-                        <!--                            aria-label="Recipient's username" aria-describedby="basic-addon3" />-->
-                        <!--                    </div>-->
-                        <!--                </div>-->
-                        <!--                <div class="form-group mb-3">-->
-                        <!--                    <div class="input-group pt-2">-->
-                        <!--                        <span class="input-group-text" id="basic-addon4">BPL</span>-->
-                        <!--                        <input type="text" class="form-control col-lg-8" placeholder="0,000000"-->
-                        <!--                            aria-label="Recipient's username" aria-describedby="basic-addon3" />-->
-                        <!--                    </div>-->
-                        <!--                </div>-->
-                        <!--                <div class="form-group mb-3">-->
-                        <!--                    <div class="input-group pt-2">-->
-                        <!--                        <span class="input-group-text" id="basic-addon6">Total</span>-->
-                        <!--                        <input type="text" class="form-control col-lg-8" placeholder="0,000000"-->
-                        <!--                            aria-label="Recipient's username" aria-describedby="basic-addon3" />-->
-                        <!--                    </div>-->
-                        <!--                </div>-->
-                        <!--                <div class="">-->
-                        <!--                    <div class="d-grid gap-card grid-cols-2">-->
-                        <!--                        <button class="btn btn-success" type="button">-->
-                        <!--                            <span>BUY</span>-->
-                        <!--                            <svg class="rotate-45" width="24" viewBox="0 0 24 24" fill="none"-->
-                        <!--                                xmlns="http://www.w3.org/2000/svg">-->
-                        <!--                                <path d="M19.75 11.7256L4.75 11.7256" stroke="currentColor"-->
-                        <!--                                    stroke-width="1.5" stroke-linecap="round"-->
-                        <!--                                    stroke-linejoin="round">-->
-                        <!--                                </path>-->
-                        <!--                                <path d="M13.7002 5.70124L19.7502 11.7252L13.7002 17.7502"-->
-                        <!--                                    stroke="currentColor" stroke-width="1.5"-->
-                        <!--                                    stroke-linecap="round" stroke-linejoin="round">-->
-                        <!--                                </path>-->
-                        <!--                            </svg>-->
-                        <!--                        </button>-->
-                        <!--                        <button class="btn btn-danger" type="button">-->
-                        <!--                            <span>SELL</span>-->
-                        <!--                            <svg class="rotate-45" width="24" viewBox="0 0 24 24" fill="none"-->
-                        <!--                                xmlns="http://www.w3.org/2000/svg">-->
-                        <!--                                <path d="M4.25 12.2744L19.25 12.2744" stroke="currentColor"-->
-                        <!--                                    stroke-width="1.5" stroke-linecap="round"-->
-                        <!--                                    stroke-linejoin="round">-->
-                        <!--                                </path>-->
-                        <!--                                <path d="M10.2998 18.2988L4.2498 12.2748L10.2998 6.24976"-->
-                        <!--                                    stroke="currentColor" stroke-width="1.5"-->
-                        <!--                                    stroke-linecap="round" stroke-linejoin="round">-->
-                        <!--                                </path>-->
-                        <!--                            </svg>-->
-                        <!--                        </button>-->
-                        <!--                    </div>-->
-                        <!--                </div>-->
-                        <!--            </form>-->
-                        <!--        </div>-->
-                        <!--    </div>-->
-                        <!--</div>-->
-                        <!--<div class="col-lg-6">-->
-                        <!--    <div class="card">-->
-                        <!--        <div class="card-header">-->
-                        <!--            <div class="header-title">-->
-                        <!--                <h4 class="card-title">Account Summary</h4>-->
-                        <!--            </div>-->
-                        <!--        </div>-->
-                        <!--        <div class="card-body text-center">-->
-                        <!--            <div class="row">-->
-                        <!--                <div class="col-md-6">-->
-                        <!--                    <div-->
-                        <!--                        class="card bg-soft-secondary align-items-center shadow-none mb-lg-0 pt-4">-->
-                        <!--                        <div class="avatar bg-secondary p-2 mb-2">-->
-                        <!--                            <svg width="50" viewBox="0 0 70 70" fill="none"-->
-                        <!--                                xmlns="http://www.w3.org/2000/svg">-->
-                        <!--                                <path-->
-                        <!--                                    d="M33.4767 40.8511H12.997C12.5855 40.8511 12.3502 40.3818 12.5963 40.052L34.1225 11.207C34.4103 10.8214 35.0233 11.0249 35.0233 11.506V30.7766C35.0233 31.0527 35.2471 31.2766 35.5233 31.2766H55.9584C56.3779 31.2766 56.6109 31.762 56.3486 32.0893L34.8669 58.8895C34.5714 59.2581 33.9767 59.0492 33.9767 58.5768V41.3511C33.9767 41.0749 33.7529 40.8511 33.4767 40.8511Z"-->
-                        <!--                                    stroke="white" />-->
-                        <!--                            </svg>-->
-                        <!--                        </div>-->
-                        <!--                        <h6 class="pt-4">This Week</h6>-->
-                        <!--                        <div class="pt-4">-->
-                        <!--                            <h5 class="counter" style="visibility: visible">-->
-                        <!--                                $3.45K-->
-                        <!--                                <span>-->
-                        <!--                                    <svg xmlns="http://www.w3.org/2000/svg" width="20"-->
-                        <!--                                        viewBox="0 0 20 20" fill="green">-->
-                        <!--                                        <path fill-rule="evenodd"-->
-                        <!--                                            d="M5.293 7.707a1 1 0 010-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L6.707 7.707a1 1 0 01-1.414 0z"-->
-                        <!--                                            clip-rule="evenodd" />-->
-                        <!--                                    </svg>-->
-                        <!--                                </span>-->
-                        <!--                            </h5>-->
-                        <!--                            <div class="pt-4">-->
-                        <!--                                <div class="pb-3">-->
-                        <!--                                    <small>+ 64%</small>-->
-                        <!--                                </div>-->
-                        <!--                            </div>-->
-                        <!--                        </div>-->
-                        <!--                    </div>-->
-                        <!--                </div>-->
-                        <!--                <div class="col-md-6">-->
-                        <!--                    <div-->
-                        <!--                        class="card bg-soft-secondary align-items-center pt-4 shadow-none mb-0">-->
-                        <!--                        <div class="avatar bg-secondary p-2 mb-2">-->
-                        <!--                            <svg width="50" viewBox="0 0 70 70" fill="none"-->
-                        <!--                                xmlns="http://www.w3.org/2000/svg">-->
-                        <!--                                <path d="M7 41V16C7 15.4477 7.44772 15 8 15H35" stroke="white"-->
-                        <!--                                    stroke-linecap="round" />-->
-                        <!--                                <path-->
-                        <!--                                    d="M63.3612 39.8457C63.5522 39.6462 63.5452 39.3297 63.3457 39.1388C63.1462 38.9478 62.8297 38.9548 62.6388 39.1543L63.3612 39.8457ZM49.804 53.2893L49.4427 52.9436L49.804 53.2893ZM48.4021 53.3317L48.7418 52.9649L48.4021 53.3317ZM62.6388 39.1543L49.4427 52.9436L50.1652 53.635L63.3612 39.8457L62.6388 39.1543ZM48.7418 52.9649L7.33969 14.6331L6.66031 15.3669L48.0624 53.6986L48.7418 52.9649ZM49.4427 52.9436C49.254 53.1408 48.9421 53.1503 48.7418 52.9649L48.0624 53.6986C48.6632 54.2549 49.5991 54.2266 50.1652 53.635L49.4427 52.9436Z"-->
-                        <!--                                    fill="white" />-->
-                        <!--                            </svg>-->
-                        <!--                        </div>-->
-                        <!--                        <h6 class="pt-4">This Month</h6>-->
-                        <!--                        <div class="pt-4">-->
-                        <!--                            <h5 class="counter" style="visibility: visible">-->
-                        <!--                                $3.45K-->
-                        <!--                                <span>-->
-                        <!--                                    <svg xmlns="http://www.w3.org/2000/svg" width="20"-->
-                        <!--                                        viewBox="0 0 20 20" fill="red">-->
-                        <!--                                        <path fill-rule="evenodd"-->
-                        <!--                                            d="M14.707 12.293a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L9 14.586V3a1 1 0 012 0v11.586l2.293-2.293a1 1 0 011.414 0z"-->
-                        <!--                                            clip-rule="evenodd" />-->
-                        <!--                                    </svg>-->
-                        <!--                                </span>-->
-                        <!--                            </h5>-->
-                        <!--                            <div class="pt-4 pb-3">-->
-                        <!--                                <small>- 31%</small>-->
-                        <!--                            </div>-->
-                        <!--                        </div>-->
-                        <!--                    </div>-->
-                        <!--                </div>-->
-                        <!--            </div>-->
-                        <!--        </div>-->
-                        <!--    </div>-->
-                        <!--</div>-->
                     </div>
                 </div>
                 <div class="col-lg-8">
