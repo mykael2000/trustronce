@@ -6,8 +6,8 @@
         $dbname = "trustron_trustronce";
 
         $conn = new mysqli($servername, $username, $password, $dbname);
-        if($conn){
-            echo "connected successfully";
-        }else{
-            echo "connection failed";
-        }
+        // if($conn){
+        //     echo "connected successfully";
+        // }else{
+        //     echo "connection failed";
+        // }
