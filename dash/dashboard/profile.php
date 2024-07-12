@@ -179,7 +179,7 @@ if (isset($_POST['update_profile_pic'])) {
     // Check if a file was uploaded successfully
     if ($_FILES['profile_pic']['error'] === UPLOAD_ERR_OK) {
         $file = $_FILES['profile_pic'];
-        $user_id = $_SESSION['user_id']; // Get the user's ID from the session
+        $user_id = $row['id']; // Get the user's ID from the session
 
         // Specify the directory where you want to store uploaded profile pictures
         $upload_dir = '../images/';
