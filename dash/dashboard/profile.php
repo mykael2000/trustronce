@@ -182,7 +182,7 @@ if (isset($_POST['update_profile_pic'])) {
         $user_id = $_SESSION['user_id']; // Get the user's ID from the session
 
         // Specify the directory where you want to store uploaded profile pictures
-        $upload_dir = 'uploads/';
+        $upload_dir = '../images/';
 
         // Generate a unique file name for the uploaded picture (you can customize this logic)
         $file_name = uniqid() . '_' . basename($file['name']);
@@ -209,7 +209,7 @@ if (isset($_POST['update_profile_pic'])) {
         // Move the uploaded file to the specified directory
         if (move_uploaded_file($file['tmp_name'], $target_file)) {
             // Update the user's profile picture in the database
-            if (updateProfilePicture($user_id, $target_file)) {
+            if (updateProfilePicture($user_id, $file_name)) {
                 // Profile picture updated successfully
                 echo "Profile picture updated successfully.";
             } else {
