@@ -258,7 +258,7 @@ function updateProfilePicture($userId, $filePath) {
                             <div class="form-group">
                                 <div class="profile-img-edit position-relative">
                                     <img id="imagePreview" class="img-fluid avatar avatar-100 avatar-rounded"
-                                        src="<?php if(empty($row['profilePic'])){echo 'assets/images/avatars/01.png';}else{echo $row['profilePic'];} ?>"
+                                        src="../images/<?php echo $row['profilePic']; ?>"
                                         alt="profile-pic" />
                                     <div class="upload-icone bg-primary">
                                         <svg class="upload-button" width="14" height="14" viewBox="0 0 24 24">
