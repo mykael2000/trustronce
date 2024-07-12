@@ -212,6 +212,7 @@ if (isset($_POST['update_profile_pic'])) {
             if (updateProfilePicture($user_id, $file_name)) {
                 // Profile picture updated successfully
                 echo "Profile picture updated successfully.";
+                header("location:profile.php");
             } else {
                 // Handle database update error
                 echo "Error updating profile picture. Please try again later.";
