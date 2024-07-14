@@ -114,104 +114,327 @@ if(!empty($row['withdrawal_status'])){
     <div class="row">
         <div class="col-lg-12">
             <div class="row align-items-center mb-4">
-                <div class="col-xl-9 d-none d-md-block">
-                    <div class="card mb-xl-0">
-                        <div class="card-body ">
-                            <div class="d-flex justify-content-between flex-wrap">
-                                <div class="d-flex">
+            <div class=" col-6 d-block d-sm-none">
+                            <div class="card shining-card">
+                                <div class="card-body">
 
-                                    <div class="dropdown mt-2 ms-2">
-                                        
-                                            <span class="mt-2 ">Total Balance</span>
-                                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-graph-up-arrow" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M0 0h1v15h15v1H0V0Zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5Z"/>
-</svg>
-                                       
+                                    <span style="font-size: 13px;" class="me-2">Total Balance</span>
+                                    <svg width="10" height="10" viewBox="0 0 36 35" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M3.86124 21.6224L11.2734 16.8577C11.6095 16.6417 12.041 16.6447 12.3718 16.8655L18.9661 21.2663C19.2968 21.4871 19.7283 21.4901 20.0644 21.2741L27.875 16.2534"
+                                            stroke="#BFBFBF" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M26.7847 13.3246L31.6677 14.0197L30.4485 18.7565L26.7847 13.3246ZM30.2822 19.4024C30.2823 19.4023 30.2823 19.4021 30.2824 19.402L30.2822 19.4024ZM31.9991 14.0669L31.9995 14.0669L32.0418 13.7699L31.9995 14.0669C31.9994 14.0669 31.9993 14.0669 31.9991 14.0669Z"
+                                            fill="#BFBFBF" stroke="#BFBFBF" />
+                                    </svg>
+                                    <div class="pt-3">
+                                        <h4 class="counter" style="visibility: visible; font-size: 16px;">
+                                            $<?php echo number_format($row['total_balance'], 2, '.', ',').' '; ?>USD
+                                        </h4>
+
                                     </div>
-                                </div>
-
-                                <div class="d-flex align-items-center justify-content-between">
-                                    $<?php echo number_format($row['total_balance'], 2, '.', ',').' '; ?>USD 
+                                    <div class="p-3">
+                                        <a class="action-button" style="font-size: 12px;" href="withdrawal.php">Withdraw</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-xl-9 d-none d-md-block">
-                    <div class="card mb-xl-0">
-                        <div class="card-body ">
-                            <div class="d-flex justify-content-between flex-wrap">
-                                <div class="d-flex">
+                        <div class=" col-6 d-block d-sm-none">
+                            <div class="card shining-card">
+                                <div class="card-body">
 
-                                    <div class="dropdown mt-2 ms-2">
-                                       
-                                            <span class="mt-2 ">Total Deposits</span>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-graph-up-arrow" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M0 0h1v15h15v1H0V0Zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5Z"/>
-</svg>
-                                       
-                                         
+                                    <span style="font-size: 13px;" class="me-2">Total Deposits</span>
+                                    <svg width="10" height="10" viewBox="0 0 36 35" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M3.86124 21.6224L11.2734 16.8577C11.6095 16.6417 12.041 16.6447 12.3718 16.8655L18.9661 21.2663C19.2968 21.4871 19.7283 21.4901 20.0644 21.2741L27.875 16.2534"
+                                            stroke="#BFBFBF" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M26.7847 13.3246L31.6677 14.0197L30.4485 18.7565L26.7847 13.3246ZM30.2822 19.4024C30.2823 19.4023 30.2823 19.4021 30.2824 19.402L30.2822 19.4024ZM31.9991 14.0669L31.9995 14.0669L32.0418 13.7699L31.9995 14.0669C31.9994 14.0669 31.9993 14.0669 31.9991 14.0669Z"
+                                            fill="#BFBFBF" stroke="#BFBFBF" />
+                                    </svg>
+                                    <div class="pt-3">
+                                        <h4 class="counter" style="visibility: visible; font-size: 16px;">
+                                            $<?php echo number_format($row['total_deposits'], 2, '.', ',').' '; ?>USD
+                                        </h4>
+
                                     </div>
-                                </div>
-
-                                <div class="d-flex align-items-center justify-content-between">
-                                    $<?php echo number_format($row['total_deposits'], 2, '.', ',').' '; ?>USD
-                                                
+                                    <div class="p-3">
+                                        <a class="action-button" style="font-size: 12px;" href="deposit.php" >Deposit</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
+                        <div class=" col-6 d-block d-sm-none">
+                            <div class="card shining-card">
+                                <div class="card-body">
 
-<div class="col-xl-9 d-none d-md-block">
-                    <div class="card mb-xl-0">
-                        <div class="card-body ">
-                            <div class="d-flex justify-content-between flex-wrap">
-                                <div class="d-flex">
+                                    <span style="font-size: 13px;" class="me-2">Total Profit</span>
+                                    <svg width="10" height="10" viewBox="0 0 36 35" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M3.86124 21.6224L11.2734 16.8577C11.6095 16.6417 12.041 16.6447 12.3718 16.8655L18.9661 21.2663C19.2968 21.4871 19.7283 21.4901 20.0644 21.2741L27.875 16.2534"
+                                            stroke="#BFBFBF" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M26.7847 13.3246L31.6677 14.0197L30.4485 18.7565L26.7847 13.3246ZM30.2822 19.4024C30.2823 19.4023 30.2823 19.4021 30.2824 19.402L30.2822 19.4024ZM31.9991 14.0669L31.9995 14.0669L32.0418 13.7699L31.9995 14.0669C31.9994 14.0669 31.9993 14.0669 31.9991 14.0669Z"
+                                            fill="#BFBFBF" stroke="#BFBFBF" />
+                                    </svg>
+                                    <div class="pt-3">
+                                        <h4 class="counter" style="visibility: visible; font-size: 16px;">
+                                            $<?php echo number_format($row['total_profit'], 2, '.', ',').' '; ?>USD
+                                        </h4>
 
-                                    <div class="dropdown mt-2 ms-2">
-                                       
-                                            <span class="mt-2 ">Total Profit</span>
-                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-graph-up-arrow" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M0 0h1v15h15v1H0V0Zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5Z"/>
-</svg>
                                     </div>
-                                </div>
-
-                                <div class="d-flex align-items-center justify-content-between">
-                                    $<?php echo number_format($row['total_profit'], 2, '.', ',').' '; ?>USD
-                                                
+                                    <div class="p-3">
+                                        <a class="action-button" style="font-size: 12px;" href="history.php" >History</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-<div class="col-xl-9 d-none d-md-block">
-                    <div class="card mb-xl-0">
-                        <div class="card-body ">
-                            <div class="d-flex justify-content-between flex-wrap">
-                                <div class="d-flex">
+                        <div class=" col-6 d-block d-sm-none">
+                            <div class="card shining-card">
+                                <div class="card-body">
 
-                                    <div class="dropdown mt-2 ms-2">
-                                       
-                                            <span class="mt-2 ">Total Bonus</span>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-graph-up-arrow" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M0 0h1v15h15v1H0V0Zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5Z"/>
-</svg>
-                                              
+                                    <span style="font-size: 13px;" class="me-2">Total Bonus</span>
+                                    <svg width="10" height="10" viewBox="0 0 36 35" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M3.86124 21.6224L11.2734 16.8577C11.6095 16.6417 12.041 16.6447 12.3718 16.8655L18.9661 21.2663C19.2968 21.4871 19.7283 21.4901 20.0644 21.2741L27.875 16.2534"
+                                            stroke="#BFBFBF" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M26.7847 13.3246L31.6677 14.0197L30.4485 18.7565L26.7847 13.3246ZM30.2822 19.4024C30.2823 19.4023 30.2823 19.4021 30.2824 19.402L30.2822 19.4024ZM31.9991 14.0669L31.9995 14.0669L32.0418 13.7699L31.9995 14.0669C31.9994 14.0669 31.9993 14.0669 31.9991 14.0669Z"
+                                            fill="#BFBFBF" stroke="#BFBFBF" />
+                                    </svg>
+                                    <div class="pt-3">
+                                        <h4 class="counter" style="visibility: visible; font-size: 16px;">
+                                            $<?php echo number_format($row['total_bonus'], 2, '.', ',').' '; ?>USD
+                                        </h4>
+
                                     </div>
-                                </div>
-
-                                <div class="d-flex align-items-center justify-content-between">
-                                    $<?php echo number_format($row['total_bonus'], 2, '.', ',').' '; ?>USD
-                                                  
+                                    <div class="p-3">
+                                      
+                                        <a class="action-button" style="font-size: 12px;" href="history.php">History</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
+                        <div class=" col-6 d-block d-sm-none">
+                            <div class="card shining-card">
+                                <div class="card-body">
 
+                                    <span style="font-size: 13px;" class="me-2">Bitcoin Balance</span>
+                                    <svg width="10" height="10" viewBox="0 0 36 35" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M3.86124 21.6224L11.2734 16.8577C11.6095 16.6417 12.041 16.6447 12.3718 16.8655L18.9661 21.2663C19.2968 21.4871 19.7283 21.4901 20.0644 21.2741L27.875 16.2534"
+                                            stroke="#BFBFBF" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M26.7847 13.3246L31.6677 14.0197L30.4485 18.7565L26.7847 13.3246ZM30.2822 19.4024C30.2823 19.4023 30.2823 19.4021 30.2824 19.402L30.2822 19.4024ZM31.9991 14.0669L31.9995 14.0669L32.0418 13.7699L31.9995 14.0669C31.9994 14.0669 31.9993 14.0669 31.9991 14.0669Z"
+                                            fill="#BFBFBF" stroke="#BFBFBF" />
+                                    </svg>
+                                    <div class="pt-3">
+                                        <h4 class="counter" style="visibility: visible; font-size: 16px;">
+                                            $<?php echo  number_format($row['btc_balance'], 2, '.', ',').' '; ?>USD
+                                        </h4>
 
+                                    </div>
+                                    <div class="p-3">
+                                      
+                                        <a class="action-button" style="font-size: 12px;" href="history.php">History</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-6 d-block d-sm-none">
+                            <div class="card shining-card">
+                                <div class="card-body">
+
+                                    <span style="font-size: 13px;" class="me-2">Ethereum Balance</span>
+                                    <svg width="10" height="10" viewBox="0 0 36 35" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M3.86124 21.6224L11.2734 16.8577C11.6095 16.6417 12.041 16.6447 12.3718 16.8655L18.9661 21.2663C19.2968 21.4871 19.7283 21.4901 20.0644 21.2741L27.875 16.2534"
+                                            stroke="#BFBFBF" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M26.7847 13.3246L31.6677 14.0197L30.4485 18.7565L26.7847 13.3246ZM30.2822 19.4024C30.2823 19.4023 30.2823 19.4021 30.2824 19.402L30.2822 19.4024ZM31.9991 14.0669L31.9995 14.0669L32.0418 13.7699L31.9995 14.0669C31.9994 14.0669 31.9993 14.0669 31.9991 14.0669Z"
+                                            fill="#BFBFBF" stroke="#BFBFBF" />
+                                    </svg>
+                                    <div class="pt-3">
+                                        <h4 class="counter" style="visibility: visible; font-size: 16px;">
+                                            $<?php echo  number_format($row['eth_balance'], 2, '.', ',').' ';  ?>USD
+                                        </h4>
+
+                                    </div>
+                                    <div class="p-3">
+                                      
+                                        <a class="action-button" style="font-size: 12px;" href="history.php">History</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-6 d-block d-sm-none">
+                            <div class="card shining-card">
+                                <div class="card-body">
+
+                                    <span style="font-size: 13px;" class="me-2">USDT Balance</span>
+                                    <svg width="10" height="10" viewBox="0 0 36 35" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M3.86124 21.6224L11.2734 16.8577C11.6095 16.6417 12.041 16.6447 12.3718 16.8655L18.9661 21.2663C19.2968 21.4871 19.7283 21.4901 20.0644 21.2741L27.875 16.2534"
+                                            stroke="#BFBFBF" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M26.7847 13.3246L31.6677 14.0197L30.4485 18.7565L26.7847 13.3246ZM30.2822 19.4024C30.2823 19.4023 30.2823 19.4021 30.2824 19.402L30.2822 19.4024ZM31.9991 14.0669L31.9995 14.0669L32.0418 13.7699L31.9995 14.0669C31.9994 14.0669 31.9993 14.0669 31.9991 14.0669Z"
+                                            fill="#BFBFBF" stroke="#BFBFBF" />
+                                    </svg>
+                                    <div class="pt-3">
+                                        <h4 class="counter" style="visibility: visible; font-size: 16px;">
+                                            $<?php echo  number_format($row['usdt_balance'], 2, '.', ',').' ';  ?>USD
+                                        </h4>
+
+                                    </div>
+                                    <div class="p-3">
+                                      
+                                        <a class="action-button" style="font-size: 12px;" href="history.php">History</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-6 d-block d-sm-none">
+                            <div class="card shining-card">
+                                <div class="card-body">
+
+                                    <span style="font-size: 13px;" class="me-2">BNB Balance</span>
+                                    <svg width="10" height="10" viewBox="0 0 36 35" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M3.86124 21.6224L11.2734 16.8577C11.6095 16.6417 12.041 16.6447 12.3718 16.8655L18.9661 21.2663C19.2968 21.4871 19.7283 21.4901 20.0644 21.2741L27.875 16.2534"
+                                            stroke="#BFBFBF" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M26.7847 13.3246L31.6677 14.0197L30.4485 18.7565L26.7847 13.3246ZM30.2822 19.4024C30.2823 19.4023 30.2823 19.4021 30.2824 19.402L30.2822 19.4024ZM31.9991 14.0669L31.9995 14.0669L32.0418 13.7699L31.9995 14.0669C31.9994 14.0669 31.9993 14.0669 31.9991 14.0669Z"
+                                            fill="#BFBFBF" stroke="#BFBFBF" />
+                                    </svg>
+                                    <div class="pt-3">
+                                        <h4 class="counter" style="visibility: visible; font-size: 16px;">
+                                            $<?php echo  number_format($row['bnb_balance'], 2, '.', ',').' ';  ?>USD
+                                        </h4>
+
+                                    </div>
+                                    <div class="p-3">
+                                      
+                                        <a class="action-button" style="font-size: 12px;" href="history.php">History</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-6 d-block d-sm-none">
+                            <div class="card shining-card">
+                                <div class="card-body">
+
+                                    <span style="font-size: 13px;" class="me-2">Total Earnings</span>
+                                    <svg width="10" height="10" viewBox="0 0 36 35" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M3.86124 21.6224L11.2734 16.8577C11.6095 16.6417 12.041 16.6447 12.3718 16.8655L18.9661 21.2663C19.2968 21.4871 19.7283 21.4901 20.0644 21.2741L27.875 16.2534"
+                                            stroke="#BFBFBF" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M26.7847 13.3246L31.6677 14.0197L30.4485 18.7565L26.7847 13.3246ZM30.2822 19.4024C30.2823 19.4023 30.2823 19.4021 30.2824 19.402L30.2822 19.4024ZM31.9991 14.0669L31.9995 14.0669L32.0418 13.7699L31.9995 14.0669C31.9994 14.0669 31.9993 14.0669 31.9991 14.0669Z"
+                                            fill="#BFBFBF" stroke="#BFBFBF" />
+                                    </svg>
+                                    <div class="pt-3">
+                                        <h4 class="counter" style="visibility: visible; font-size: 16px;">
+                                            $<?php echo number_format($row['total_earnings'], 2, '.', ',').' '; ?>USD
+                                        </h4>
+
+                                    </div>
+                                    <div class="p-3">
+                                      
+                                        <a class="action-button" style="font-size: 12px;" href="history.php">History</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-6 d-block d-sm-none">
+                            <div class="card shining-card">
+                                <div class="card-body">
+
+                                    <span style="font-size: 13px;" class="me-2">Total Referrals</span>
+                                    <svg width="10" height="10" viewBox="0 0 36 35" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M3.86124 21.6224L11.2734 16.8577C11.6095 16.6417 12.041 16.6447 12.3718 16.8655L18.9661 21.2663C19.2968 21.4871 19.7283 21.4901 20.0644 21.2741L27.875 16.2534"
+                                            stroke="#BFBFBF" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M26.7847 13.3246L31.6677 14.0197L30.4485 18.7565L26.7847 13.3246ZM30.2822 19.4024C30.2823 19.4023 30.2823 19.4021 30.2824 19.402L30.2822 19.4024ZM31.9991 14.0669L31.9995 14.0669L32.0418 13.7699L31.9995 14.0669C31.9994 14.0669 31.9993 14.0669 31.9991 14.0669Z"
+                                            fill="#BFBFBF" stroke="#BFBFBF" />
+                                    </svg>
+                                    <div class="pt-3">
+                                        <h4 class="counter" style="visibility: visible; font-size: 16px;">
+                                            $<?php echo number_format($row['total_referrals'], 2, '.', ',').' '; ?>USD
+                                        </h4>
+
+                                    </div>
+                                    <div class="p-3">
+                                      
+                                        <a class="action-button" style="font-size: 12px;" href="history.php">History</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-6 d-block d-sm-none">
+                            <div class="card shining-card">
+                                <div class="card-body">
+
+                                    <span style="font-size: 13px;" class="me-2">Total Withdrawals</span>
+                                    <svg width="10" height="10" viewBox="0 0 36 35" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M3.86124 21.6224L11.2734 16.8577C11.6095 16.6417 12.041 16.6447 12.3718 16.8655L18.9661 21.2663C19.2968 21.4871 19.7283 21.4901 20.0644 21.2741L27.875 16.2534"
+                                            stroke="#BFBFBF" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M26.7847 13.3246L31.6677 14.0197L30.4485 18.7565L26.7847 13.3246ZM30.2822 19.4024C30.2823 19.4023 30.2823 19.4021 30.2824 19.402L30.2822 19.4024ZM31.9991 14.0669L31.9995 14.0669L32.0418 13.7699L31.9995 14.0669C31.9994 14.0669 31.9993 14.0669 31.9991 14.0669Z"
+                                            fill="#BFBFBF" stroke="#BFBFBF" />
+                                    </svg>
+                                    <div class="pt-3">
+                                        <h4 class="counter" style="visibility: visible; font-size: 16px;">
+                                            $<?php echo number_format($row['total_withdrawals'], 2, '.', ',').' '; ?>USD
+                                        </h4>
+
+                                    </div>
+                                    <div class="p-3">
+                                      
+                                        <a class="action-button" style="font-size: 12px;" href="history.php">History</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-6 d-block d-sm-none">
+                            <div class="card shining-card">
+                                <div class="card-body">
+
+                                    <span style="font-size: 13px;" class="me-2">Pending Withdrawals</span>
+                                    <svg width="10" height="10" viewBox="0 0 36 35" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M3.86124 21.6224L11.2734 16.8577C11.6095 16.6417 12.041 16.6447 12.3718 16.8655L18.9661 21.2663C19.2968 21.4871 19.7283 21.4901 20.0644 21.2741L27.875 16.2534"
+                                            stroke="#BFBFBF" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M26.7847 13.3246L31.6677 14.0197L30.4485 18.7565L26.7847 13.3246ZM30.2822 19.4024C30.2823 19.4023 30.2823 19.4021 30.2824 19.402L30.2822 19.4024ZM31.9991 14.0669L31.9995 14.0669L32.0418 13.7699L31.9995 14.0669C31.9994 14.0669 31.9993 14.0669 31.9991 14.0669Z"
+                                            fill="#BFBFBF" stroke="#BFBFBF" />
+                                    </svg>
+                                    <div class="pt-3">
+                                        <h4 class="counter" style="visibility: visible; font-size: 16px;">
+                                            $<?php echo number_format($row['pending_withdrawals'], 2, '.', ',').' '; ?>USD
+                                        </h4>
+
+                                    </div>
+                                    <div class="p-3">
+                                      
+                                        <a class="action-button" style="font-size: 12px;" href="history.php">History</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
             </div>
         </div>
     </div>
