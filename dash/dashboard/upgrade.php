@@ -13,8 +13,8 @@
         if($coin == "ETH"){
             header("location:upgradeAddress/eth.php");
         }
-        if($coin == "LTC"){
-            header("location:upgradeAddress/ltc.php");
+        if($coin == "BNB"){
+            header("location:upgradeAddress/BNB.php");
         }
     }
 
@@ -45,8 +45,8 @@
         $address = "btcaddress";
     }elseif($coin == "ETH"){
         $address = "ethaddress";
-    }elseif($coin == "LTC"){
-        $address = "ltcaddress";
+    }elseif($coin == "BNB"){
+        $address = "bnbaddress";
     }
     // File upload handling
     $upload_dir = 'proof/'; // Specify the directory where you want to store uploaded files
@@ -103,51 +103,62 @@ if(!empty($_GET['st'])){
             <div class="col-lg-12">
                 <div class="card">
 
+                    <h3 class="p-3">Elite Plan</h3>
+                    <div class="p-3">
+                        <ul>
+                            <li>Minimum: $300,000</li>
+                            <li>Maximum: $6,000,000</li>
+                            <li>42%</li>
+                            <li>Instant Withdrawal</li>
+                            
+                        </ul>
+                        <button onclick="hidePlans()" class="btn btn-primary">Join Plan</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="card">
+
+                    <h3 class="p-3">Advanced Plan</h3>
+                    <div class="p-3">
+                        <ul>
+                        <li>Minimum: $80,000</li>
+                            <li>Maximum: $299,999</li>
+                            <li>32%</li>
+                            <li>Instant Withdrawal</li>
+                        </ul>
+                        <button onclick="hidePlans()" class="btn btn-primary">Join Plan</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="card">
+
+                    <h3 class="p-3">Standard Plan</h3>
+                    <div class="p-3">
+                        <ul>
+                        <li>Minimum: $10,000</li>
+                            <li>Maximum: $79,999</li>
+                            <li>23%</li>
+                            <li>Instant Withdrawal</li>
+                        </ul>
+                        <button onclick="hidePlans()" class="btn btn-primary">Join Plan</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="card">
+
                     <h3 class="p-3">Basic Plan</h3>
                     <div class="p-3">
                         <ul>
-                            <li>Mininum Possible Deposit ($500)</li>
-                            <li>Maximum Possible Deposit ($4,999)</li>
-                            <li>Minimum Return ($17,000)</li>
-                            <li>Maximum Return ($27,999)</li>
-                            <li>Gift Bonus ($500)</li>
-                            <li>Duration (1 month)</li>
-                        </ul>
-                        <button onclick="hidePlans()" class="btn btn-primary">Join Plan</button>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-12">
-                <div class="card">
-
-                    <h3 class="p-3">Silver Plan</h3>
-                    <div class="p-3">
-                        <ul>
-                            <li>Mininum Possible Deposit ($5,000)</li>
-                            <li>Maximum Possible Deposit ($49,999)</li>
-                            <li>Minimum Return ($29,000)</li>
-                            <li>Maximum Return (59,999)</li>
-                            <li>Gift Bonus ($1,000)</li>
-                            <li>Duration (3 months)</li>
-                        </ul>
-                        <button onclick="hidePlans()" class="btn btn-primary">Join Plan</button>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-12">
-                <div class="card">
-
-                    <h3 class="p-3">Gold Plan</h3>
-                    <div class="p-3">
-                        <ul>
-                            <li>Mininum Possible Deposit ($50,000)</li>
-                            <li>Maximum Possible Deposit ($5,000,000)</li>
-                            <li>Minimum Return ($42,200)</li>
-                            <li>Maximum Return ($62,000)</li>
-                            <li>Gift Bonus ($3,000)</li>
-                            <li>Duration (One Time)</li>
+                        <li>Minimum: $699</li>
+                            <li>Maximum: $9,999</li>
+                            <li>19%</li>
+                            <li>Instant Withdrawal</li>
                         </ul>
                         <button onclick="hidePlans()" class="btn btn-primary">Join Plan</button>
 
@@ -170,7 +181,7 @@ if(!empty($_GET['st'])){
 
                                     <option value="BTC">BTC</option>
                                     <option value="ETH">ETH</option>
-                                    <option value="LTC">LTC</option>
+                                    <option value="BNB">BNB</option>
                                     <option value="USDT">USDT</option>
 
                                 </select>
@@ -274,7 +285,7 @@ if(!empty($_GET['st'])){
                     <script type="text/javascript"
                         src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
                     {
-                        "symbol": "NYSE:LTC",
+                        "symbol": "NYSE:BNB",
                         "width": 350,
                         "height": 220,
                         "locale": "en",
