@@ -224,7 +224,7 @@ if(!empty($row['withdrawal_status'])){
                             <div class="card shining-card">
                                 <div class="card-body">
 
-                                    <span style="font-size: 10px;" class="fs-5 me-2">Total Balance</span>
+                                    <span style="font-size: 10px;" class="me-2">Total Balance</span>
                                     <svg width="20" height="20" viewBox="0 0 36 35" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
