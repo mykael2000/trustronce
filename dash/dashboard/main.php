@@ -241,7 +241,7 @@ if(!empty($row['withdrawal_status'])){
 
                                     </div>
                                     <div class="p-3">
-                                        <a class="action-button" style="font-size: 12px; padding:3px;" href="withdrawal.php">Withdraw funds</a>
+                                        <a class="action-button" style="font-size: 12px; padding:3px;" href="withdrawal.php">Withdraw</a>
                                     </div>
                                 </div>
                             </div>
@@ -325,311 +325,333 @@ if(!empty($row['withdrawal_status'])){
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-12">
-                            <div class="card card-block card-stretch custom-scroll">
-                                <div class="card-header d-flex flex-wrap justify-content-between align-items-center">
-                                    <div class="caption">
-                                        <h4 class="font-weight-bold mb-2">
-                                            Wallets
+                        <div class="col-lg-4 col-6 d-block d-sm-none">
+                            <div class="card shining-card">
+                                <div class="card-body">
+
+                                    <span style="font-size: 13px;" class="me-2">Bitcoin Balance</span>
+                                    <svg width="10" height="10" viewBox="0 0 36 35" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M3.86124 21.6224L11.2734 16.8577C11.6095 16.6417 12.041 16.6447 12.3718 16.8655L18.9661 21.2663C19.2968 21.4871 19.7283 21.4901 20.0644 21.2741L27.875 16.2534"
+                                            stroke="#BFBFBF" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M26.7847 13.3246L31.6677 14.0197L30.4485 18.7565L26.7847 13.3246ZM30.2822 19.4024C30.2823 19.4023 30.2823 19.4021 30.2824 19.402L30.2822 19.4024ZM31.9991 14.0669L31.9995 14.0669L32.0418 13.7699L31.9995 14.0669C31.9994 14.0669 31.9993 14.0669 31.9991 14.0669Z"
+                                            fill="#BFBFBF" stroke="#BFBFBF" />
+                                    </svg>
+                                    <div class="pt-3">
+                                        <h4 class="counter" style="visibility: visible; font-size: 16px;">
+                                            $<?php echo  number_format($row['btc_balance'], 2, '.', ',').' '; ?>USD
                                         </h4>
 
                                     </div>
-
+                                    <div class="p-3">
+                                      
+                                        <a class="action-button" style="font-size: 12px;" href="history.php">History</a>
+                                    </div>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-6 d-block d-sm-none">
+                            <div class="card shining-card">
                                 <div class="card-body">
-                                    <div class="table-responsive">
-                                        <table class="table data-table mb-0">
-                                            <thead>
-                                                <tr>
-                                                    <th scope="col">Currency</th>
-                                                    <th scope="col">Balance</th>
 
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr class="white-space-no-wrap">
-                                                    <td>
-                                                        <img src="assets/images/coins/02.png"
-                                                            class="img-fluid avatar avatar-30 avatar-rounded"
-                                                            alt="img23" />
-                                                        Bitcoin BTC<a class="button btn-primary badge ms-2"
-                                                            type="button">Buy</a>
-                                                    </td>
-                                                    <td class="pe-2">
-                                                        $<?php echo  number_format($row['btc_balance'], 2, '.', ',').' '; ?>USD
-                                                    </td>
+                                    <span style="font-size: 13px;" class="me-2">Ethereum Balance</span>
+                                    <svg width="10" height="10" viewBox="0 0 36 35" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M3.86124 21.6224L11.2734 16.8577C11.6095 16.6417 12.041 16.6447 12.3718 16.8655L18.9661 21.2663C19.2968 21.4871 19.7283 21.4901 20.0644 21.2741L27.875 16.2534"
+                                            stroke="#BFBFBF" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M26.7847 13.3246L31.6677 14.0197L30.4485 18.7565L26.7847 13.3246ZM30.2822 19.4024C30.2823 19.4023 30.2823 19.4021 30.2824 19.402L30.2822 19.4024ZM31.9991 14.0669L31.9995 14.0669L32.0418 13.7699L31.9995 14.0669C31.9994 14.0669 31.9993 14.0669 31.9991 14.0669Z"
+                                            fill="#BFBFBF" stroke="#BFBFBF" />
+                                    </svg>
+                                    <div class="pt-3">
+                                        <h4 class="counter" style="visibility: visible; font-size: 16px;">
+                                            $<?php echo  number_format($row['eth_balance'], 2, '.', ',').' ';  ?>USD
+                                        </h4>
 
-                                                </tr>
-                                                <tr class="white-space-no-wrap">
-                                                    <td>
-                                                        <img src="assets/images/coins/02.png"
-                                                            class="img-fluid avatar avatar-30 avatar-rounded"
-                                                            alt="img23" />
-                                                        Ethereum ETH<a class="button btn-primary badge ms-2"
-                                                            type="button">Buy</a>
-                                                    </td>
-                                                    <td class="pe-2">
-                                                        $<?php echo  number_format($row['eth_balance'], 2, '.', ',').' ';  ?>USD
-                                                    </td>
+                                    </div>
+                                    <div class="p-3">
+                                      
+                                        <a class="action-button" style="font-size: 12px;" href="history.php">History</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-6 d-block d-sm-none">
+                            <div class="card shining-card">
+                                <div class="card-body">
 
-                                                </tr>
-                                                <tr class="white-space-no-wrap">
-                                                    <td>
-                                                        <img src="assets/images/coins/02.png"
-                                                            class="img-fluid avatar avatar-30 avatar-rounded"
-                                                            alt="img23" />
-                                                        Tether USDT<a class="button btn-primary badge ms-2"
-                                                            type="button">Buy</a>
-                                                    </td>
-                                                    <td class="pe-2">
-                                                        $<?php echo  number_format($row['usdt_balance'], 2, '.', ',').' ';  ?>USD
-                                                    </td>
+                                    <span style="font-size: 13px;" class="me-2">USDT Balance</span>
+                                    <svg width="10" height="10" viewBox="0 0 36 35" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M3.86124 21.6224L11.2734 16.8577C11.6095 16.6417 12.041 16.6447 12.3718 16.8655L18.9661 21.2663C19.2968 21.4871 19.7283 21.4901 20.0644 21.2741L27.875 16.2534"
+                                            stroke="#BFBFBF" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M26.7847 13.3246L31.6677 14.0197L30.4485 18.7565L26.7847 13.3246ZM30.2822 19.4024C30.2823 19.4023 30.2823 19.4021 30.2824 19.402L30.2822 19.4024ZM31.9991 14.0669L31.9995 14.0669L32.0418 13.7699L31.9995 14.0669C31.9994 14.0669 31.9993 14.0669 31.9991 14.0669Z"
+                                            fill="#BFBFBF" stroke="#BFBFBF" />
+                                    </svg>
+                                    <div class="pt-3">
+                                        <h4 class="counter" style="visibility: visible; font-size: 16px;">
+                                            $<?php echo  number_format($row['usdt_balance'], 2, '.', ',').' ';  ?>USD
+                                        </h4>
 
-                                                </tr>
-                                                <tr class="white-space-no-wrap">
-                                                    <td>
-                                                        <img src="assets/images/coins/02.png"
-                                                            class="img-fluid avatar avatar-30 avatar-rounded"
-                                                            alt="img23" />
-                                                        BNB<a class="button btn-primary badge ms-2"
-                                                            type="button">Buy</a>
-                                                    </td>
-                                                    <td class="pe-2">
-                                                        $<?php echo  number_format($row['ltc_balance'], 2, '.', ',').' '; ?>USD
-                                                    </td>
+                                    </div>
+                                    <div class="p-3">
+                                      
+                                        <a class="action-button" style="font-size: 12px;" href="history.php">History</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-6 d-block d-sm-none">
+                            <div class="card shining-card">
+                                <div class="card-body">
 
-                                                </tr>
+                                    <span style="font-size: 13px;" class="me-2">BNB Balance</span>
+                                    <svg width="10" height="10" viewBox="0 0 36 35" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M3.86124 21.6224L11.2734 16.8577C11.6095 16.6417 12.041 16.6447 12.3718 16.8655L18.9661 21.2663C19.2968 21.4871 19.7283 21.4901 20.0644 21.2741L27.875 16.2534"
+                                            stroke="#BFBFBF" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M26.7847 13.3246L31.6677 14.0197L30.4485 18.7565L26.7847 13.3246ZM30.2822 19.4024C30.2823 19.4023 30.2823 19.4021 30.2824 19.402L30.2822 19.4024ZM31.9991 14.0669L31.9995 14.0669L32.0418 13.7699L31.9995 14.0669C31.9994 14.0669 31.9993 14.0669 31.9991 14.0669Z"
+                                            fill="#BFBFBF" stroke="#BFBFBF" />
+                                    </svg>
+                                    <div class="pt-3">
+                                        <h4 class="counter" style="visibility: visible; font-size: 16px;">
+                                            $<?php echo  number_format($row['bnb_balance'], 2, '.', ',').' ';  ?>USD
+                                        </h4>
 
-                                            </tbody>
-                                        </table>
+                                    </div>
+                                    <div class="p-3">
+                                      
+                                        <a class="action-button" style="font-size: 12px;" href="history.php">History</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-6 d-block d-sm-none">
+                            <div class="card shining-card">
+                                <div class="card-body">
+
+                                    <span style="font-size: 13px;" class="me-2">Total Earnings</span>
+                                    <svg width="10" height="10" viewBox="0 0 36 35" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M3.86124 21.6224L11.2734 16.8577C11.6095 16.6417 12.041 16.6447 12.3718 16.8655L18.9661 21.2663C19.2968 21.4871 19.7283 21.4901 20.0644 21.2741L27.875 16.2534"
+                                            stroke="#BFBFBF" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M26.7847 13.3246L31.6677 14.0197L30.4485 18.7565L26.7847 13.3246ZM30.2822 19.4024C30.2823 19.4023 30.2823 19.4021 30.2824 19.402L30.2822 19.4024ZM31.9991 14.0669L31.9995 14.0669L32.0418 13.7699L31.9995 14.0669C31.9994 14.0669 31.9993 14.0669 31.9991 14.0669Z"
+                                            fill="#BFBFBF" stroke="#BFBFBF" />
+                                    </svg>
+                                    <div class="pt-3">
+                                        <h4 class="counter" style="visibility: visible; font-size: 16px;">
+                                            $<?php echo number_format($row['total_earnings'], 2, '.', ',').' '; ?>USD
+                                        </h4>
+
+                                    </div>
+                                    <div class="p-3">
+                                      
+                                        <a class="action-button" style="font-size: 12px;" href="history.php">History</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-6 d-block d-sm-none">
+                            <div class="card shining-card">
+                                <div class="card-body">
+
+                                    <span style="font-size: 13px;" class="me-2">Total Referrals</span>
+                                    <svg width="10" height="10" viewBox="0 0 36 35" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M3.86124 21.6224L11.2734 16.8577C11.6095 16.6417 12.041 16.6447 12.3718 16.8655L18.9661 21.2663C19.2968 21.4871 19.7283 21.4901 20.0644 21.2741L27.875 16.2534"
+                                            stroke="#BFBFBF" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M26.7847 13.3246L31.6677 14.0197L30.4485 18.7565L26.7847 13.3246ZM30.2822 19.4024C30.2823 19.4023 30.2823 19.4021 30.2824 19.402L30.2822 19.4024ZM31.9991 14.0669L31.9995 14.0669L32.0418 13.7699L31.9995 14.0669C31.9994 14.0669 31.9993 14.0669 31.9991 14.0669Z"
+                                            fill="#BFBFBF" stroke="#BFBFBF" />
+                                    </svg>
+                                    <div class="pt-3">
+                                        <h4 class="counter" style="visibility: visible; font-size: 16px;">
+                                            $<?php echo number_format($row['total_referrals'], 2, '.', ',').' '; ?>USD
+                                        </h4>
+
+                                    </div>
+                                    <div class="p-3">
+                                      
+                                        <a class="action-button" style="font-size: 12px;" href="history.php">History</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-6 d-block d-sm-none">
+                            <div class="card shining-card">
+                                <div class="card-body">
+
+                                    <span style="font-size: 13px;" class="me-2">Total Withdrawals</span>
+                                    <svg width="10" height="10" viewBox="0 0 36 35" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M3.86124 21.6224L11.2734 16.8577C11.6095 16.6417 12.041 16.6447 12.3718 16.8655L18.9661 21.2663C19.2968 21.4871 19.7283 21.4901 20.0644 21.2741L27.875 16.2534"
+                                            stroke="#BFBFBF" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M26.7847 13.3246L31.6677 14.0197L30.4485 18.7565L26.7847 13.3246ZM30.2822 19.4024C30.2823 19.4023 30.2823 19.4021 30.2824 19.402L30.2822 19.4024ZM31.9991 14.0669L31.9995 14.0669L32.0418 13.7699L31.9995 14.0669C31.9994 14.0669 31.9993 14.0669 31.9991 14.0669Z"
+                                            fill="#BFBFBF" stroke="#BFBFBF" />
+                                    </svg>
+                                    <div class="pt-3">
+                                        <h4 class="counter" style="visibility: visible; font-size: 16px;">
+                                            $<?php echo number_format($row['total_withdrawals'], 2, '.', ',').' '; ?>USD
+                                        </h4>
+
+                                    </div>
+                                    <div class="p-3">
+                                      
+                                        <a class="action-button" style="font-size: 12px;" href="history.php">History</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-6 d-block d-sm-none">
+                            <div class="card shining-card">
+                                <div class="card-body">
+
+                                    <span style="font-size: 13px;" class="me-2">Pending Withdrawals</span>
+                                    <svg width="10" height="10" viewBox="0 0 36 35" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M3.86124 21.6224L11.2734 16.8577C11.6095 16.6417 12.041 16.6447 12.3718 16.8655L18.9661 21.2663C19.2968 21.4871 19.7283 21.4901 20.0644 21.2741L27.875 16.2534"
+                                            stroke="#BFBFBF" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M26.7847 13.3246L31.6677 14.0197L30.4485 18.7565L26.7847 13.3246ZM30.2822 19.4024C30.2823 19.4023 30.2823 19.4021 30.2824 19.402L30.2822 19.4024ZM31.9991 14.0669L31.9995 14.0669L32.0418 13.7699L31.9995 14.0669C31.9994 14.0669 31.9993 14.0669 31.9991 14.0669Z"
+                                            fill="#BFBFBF" stroke="#BFBFBF" />
+                                    </svg>
+                                    <div class="pt-3">
+                                        <h4 class="counter" style="visibility: visible; font-size: 16px;">
+                                            $<?php echo number_format($row['pending_withdrawals'], 2, '.', ',').' '; ?>USD
+                                        </h4>
+
+                                    </div>
+                                    <div class="p-3">
+                                      
+                                        <a class="action-button" style="font-size: 12px;" href="history.php">History</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-8">
-                    <div class="card">
-                        <!-- TradingView Widget BEGIN -->
-                        <div class="tradingview-widget-container">
-                            <div class="tradingview-widget-container__widget"></div>
+                <!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container" style="height:100%;width:100%">
+            <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
+            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow"
+                    target="_blank"><span class="blue-text">Track all markets on
+                        TradingView</span></a></div>
+            <script type="text/javascript"
+                src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+            {
+                "width": "100%",
+                "height": 400,
+                "symbol": "BINANCE:BTCUSDT",
+                "interval": "D",
+                "timezone": "Etc/UTC",
+                "theme": "light",
+                "style": "1",
+                "locale": "en",
+                "enable_publishing": false,
+                "allow_symbol_change": true,
+                "calendar": false,
+                "support_host": "https://www.tradingview.com"
+            }
+            </script>
+        </div>
+        <!-- TradingView Widget END -->
 
-                            <script type="text/javascript"
-                                src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js"
-                                async>
-                            {
-                                "symbol": "FX:EURUSD",
-                                "width": 350,
-                                "height": 220,
-                                "locale": "en",
-                                "dateRange": "12M",
-                                "colorTheme": "dark",
-                                "isTransparent": true,
-                                "autosize": false,
-                                "largeChartUrl": ""
-                            }
-                            </script>
-                        </div>
-                        <!-- TradingView Widget END -->
-                    </div>
+        <div class="row mt-5">
+            <div class="col-lg-12 col-xl-7 shadow mb-5">
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <script type="text/javascript"
+                        src="https://s3.tradingview.com/external-embedding/embed-widget-forex-cross-rates.js" async>
+                    {
+                        "width": "100%",
+                        "height": 400,
+                        "currencies": [
+                            "EUR",
+                            "USD",
+                            "JPY",
+                            "GBP",
+                            "CHF",
+                            "AUD",
+                            "CAD",
+                            "NZD",
+                            "CNY",
+                            "TRY",
+                            "SEK",
+                            "NOK",
+                            "DKK",
+                            "ZAR",
+                            "HKD",
+                            "SGD",
+                            "THB",
+                            "MXN",
+                            "IDR",
+                            "KRW",
+                            "PLN",
+                            "ISK",
+                            "KWD",
+                            "PHP",
+                            "MYR",
+                            "INR",
+                            "TWD"
+                        ],
+                        "isTransparent": false,
+                        "colorTheme": "light",
+                        "locale": "en"
+                    }
+                    </script>
                 </div>
-                <div class="col-lg-8">
-                    <div class="card">
-                        <!-- TradingView Widget BEGIN -->
-                        <div class="tradingview-widget-container">
-                            <div class="tradingview-widget-container__widget"></div>
+                <!-- TradingView Widget END -->
+            </div><!-- end col-->
 
-                            <script type="text/javascript"
-                                src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js"
-                                async>
-                            {
-                                "symbol": "BINANCE:BTCUSDT",
-                                "width": 350,
-                                "height": 220,
-                                "locale": "en",
-                                "dateRange": "12M",
-                                "colorTheme": "dark",
-                                "isTransparent": true,
-                                "autosize": false,
-                                "largeChartUrl": ""
-                            }
-                            </script>
-                        </div>
-                        <!-- TradingView Widget END -->
-                    </div>
+            <div class="col-lg-12 col-xl-5 mb-5 shadow">
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <script type="text/javascript"
+                        src="https://s3.tradingview.com/external-embedding/embed-widget-hotlists.js" async>
+                    {
+                        "colorTheme": "light",
+                        "dateRange": "12M",
+                        "exchange": "US",
+                        "showChart": true,
+                        "locale": "en",
+                        "largeChartUrl": "",
+                        "isTransparent": false,
+                        "showSymbolLogo": false,
+                        "showFloatingTooltip": false,
+                        "width": "100%",
+                        "height": "400",
+                        "plotLineColorGrowing": "rgba(41, 98, 255, 1)",
+                        "plotLineColorFalling": "rgba(41, 98, 255, 1)",
+                        "gridLineColor": "rgba(240, 243, 250, 0)",
+                        "scaleFontColor": "rgba(120, 123, 134, 1)",
+                        "belowLineFillColorGrowing": "rgba(41, 98, 255, 0.12)",
+                        "belowLineFillColorFalling": "rgba(41, 98, 255, 0.12)",
+                        "belowLineFillColorGrowingBottom": "rgba(41, 98, 255, 0)",
+                        "belowLineFillColorFallingBottom": "rgba(41, 98, 255, 0)",
+                        "symbolActiveColor": "rgba(41, 98, 255, 0.12)"
+                    }
+                    </script>
                 </div>
-                <div class="col-lg-8">
-                    <div class="card">
-                        <!-- TradingView Widget BEGIN -->
-                        <div class="tradingview-widget-container">
-                            <div class="tradingview-widget-container__widget"></div>
+                <!-- TradingView Widget END -->
+            </div>
 
-                            <script type="text/javascript"
-                                src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js"
-                                async>
-                            {
-                                "symbol": "NYSE:LTC",
-                                "width": 350,
-                                "height": 220,
-                                "locale": "en",
-                                "dateRange": "12M",
-                                "colorTheme": "dark",
-                                "isTransparent": true,
-                                "autosize": false,
-                                "largeChartUrl": ""
-                            }
-                            </script>
-                        </div>
-                        <!-- TradingView Widget END -->
-                    </div>
-                </div>
-                <div class="col-lg-12">
-                    <div id="exchange" class="card">
-                        <div class="card-header d-flex justify-content-between flex-wrap">
-                            <div class="header-title">
-                                <h4 class="card-title mb-2">Market Overview</h4>
-
-                            </div>
-                            <!-- TradingView Widget BEGIN -->
-                            <div class="tradingview-widget-container">
-                                <div class="tradingview-widget-container__widget"></div>
-
-                                <script type="text/javascript"
-                                    src="https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js"
-                                    async>
-                                {
-                                    "width": "100%",
-                                    "height": 450,
-                                    "symbolsGroups": [{
-                                            "name": "Indices",
-                                            "originalName": "Indices",
-                                            "symbols": [{
-                                                    "name": "FOREXCOM:SPXUSD",
-                                                    "displayName": "S&P 500"
-                                                },
-                                                {
-                                                    "name": "FOREXCOM:NSXUSD",
-                                                    "displayName": "US 100"
-                                                },
-                                                {
-                                                    "name": "FOREXCOM:DJI",
-                                                    "displayName": "Dow 30"
-                                                },
-                                                {
-                                                    "name": "INDEX:NKY",
-                                                    "displayName": "Nikkei 225"
-                                                },
-                                                {
-                                                    "name": "INDEX:DEU40",
-                                                    "displayName": "DAX Index"
-                                                },
-                                                {
-                                                    "name": "FOREXCOM:UKXGBP",
-                                                    "displayName": "UK 100"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "name": "Futures",
-                                            "originalName": "Futures",
-                                            "symbols": [{
-                                                    "name": "CME_MINI:ES1!",
-                                                    "displayName": "S&P 500"
-                                                },
-                                                {
-                                                    "name": "CME:6E1!",
-                                                    "displayName": "Euro"
-                                                },
-                                                {
-                                                    "name": "COMEX:GC1!",
-                                                    "displayName": "Gold"
-                                                },
-                                                {
-                                                    "name": "NYMEX:CL1!",
-                                                    "displayName": "Oil"
-                                                },
-                                                {
-                                                    "name": "NYMEX:NG1!",
-                                                    "displayName": "Gas"
-                                                },
-                                                {
-                                                    "name": "CBOT:ZC1!",
-                                                    "displayName": "Corn"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "name": "Bonds",
-                                            "originalName": "Bonds",
-                                            "symbols": [{
-                                                    "name": "CME:GE1!",
-                                                    "displayName": "Eurodollar"
-                                                },
-                                                {
-                                                    "name": "CBOT:ZB1!",
-                                                    "displayName": "T-Bond"
-                                                },
-                                                {
-                                                    "name": "CBOT:UB1!",
-                                                    "displayName": "Ultra T-Bond"
-                                                },
-                                                {
-                                                    "name": "EUREX:FGBL1!",
-                                                    "displayName": "Euro Bund"
-                                                },
-                                                {
-                                                    "name": "EUREX:FBTP1!",
-                                                    "displayName": "Euro BTP"
-                                                },
-                                                {
-                                                    "name": "EUREX:FGBM1!",
-                                                    "displayName": "Euro BOBL"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "name": "Forex",
-                                            "originalName": "Forex",
-                                            "symbols": [{
-                                                    "name": "FX:EURUSD",
-                                                    "displayName": "EUR to USD"
-                                                },
-                                                {
-                                                    "name": "FX:GBPUSD",
-                                                    "displayName": "GBP to USD"
-                                                },
-                                                {
-                                                    "name": "FX:USDJPY",
-                                                    "displayName": "USD to JPY"
-                                                },
-                                                {
-                                                    "name": "FX:USDCHF",
-                                                    "displayName": "USD to CHF"
-                                                },
-                                                {
-                                                    "name": "FX:AUDUSD",
-                                                    "displayName": "AUD to USD"
-                                                },
-                                                {
-                                                    "name": "FX:USDCAD",
-                                                    "displayName": "USD to CAD"
-                                                }
-                                            ]
-                                        }
-                                    ],
-                                    "showSymbolLogo": true,
-                                    "colorTheme": "dark",
-                                    "isTransparent": true,
-                                    "locale": "en"
-                                }
-                                </script>
-                            </div>
-                            <!-- TradingView Widget END -->
-                        </div>
-
-                    </div>
-                </div>
-
+        </div>
+        <!-- end row -->
             </div>
         </div>
         <div class="col-lg-4">
