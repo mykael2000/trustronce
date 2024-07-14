@@ -224,7 +224,7 @@ if(!empty($row['withdrawal_status'])){
                             <div class="card shining-card">
                                 <div class="card-body">
 
-                                    <span style="font-size: 15px;" class="me-2">Total Balance</span>
+                                    <span style="font-size: 13px;" class="me-2">Total Balance</span>
                                     <svg width="10" height="10" viewBox="0 0 36 35" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -241,8 +241,7 @@ if(!empty($row['withdrawal_status'])){
 
                                     </div>
                                     <div class="p-1">
-                                        <a class="action-button" style="background: transparent; border: 0.2px solid white; font-size: 12px; padding:3px;" href="history.php">History</a>
-                                        <a class="action-button" style="font-size: 12px; padding:3px;" href="withdrawal.php">Withdraw</a>
+                                        <a class="action-button" style="font-size: 12px; padding:3px;" href="withdrawal.php">Withdraw funds</a>
                                     </div>
                                 </div>
                             </div>
