@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Litecoin Payment</title>
+    <title>BNB Payment</title>
     <style>
     body {
         font-family: Arial, sans-serif;
@@ -37,9 +37,9 @@
 
 <body>
     <div class="container">
-        <h1>Litecoin Payment</h1>
+        <h1>BNB Payment</h1>
         <p>Make sure that you are sending funds to the correct wallet address and blockchain network. Sending coins or
-            tokens other than LTC to this address may result in loss of your deposit.</p>
+            tokens other than BNB to this address may result in loss of your deposit.</p>
 
         <!-- Display the QR Code -->
         <div id="qrcode"></div>
@@ -51,7 +51,7 @@
 
         <p>Your balance will automatically be updated once the payment is confirmed.</p>
         <span>Made payment? Send proof of payment here <a
-                href="deposit.php?payment=true&&coin=LTC">upload proof of payment</a></span>
+                href="deposit.php?payment=true&&coin=BNB">upload proof of payment</a></span>
     </div>
 
     <!-- Include the QRCode.js library -->
@@ -59,7 +59,7 @@
     <script>
     // Generate the QR code
     var qrcode = new QRCode(document.getElementById("qrcode"), {
-        text: "Litecoin:LfMJJQT5xcTmUjHfZpKbWc8keqJhJweV37",
+        text: "BNB:LfMJJQT5xcTmUjHfZpKbWc8keqJhJweV37",
         width: 128,
         height: 128,
     });

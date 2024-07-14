@@ -114,7 +114,7 @@ if(!empty($row['withdrawal_status'])){
     <div class="row">
         <div class="col-lg-12">
             <div class="row align-items-center mb-4">
-                <div class="col-xl-9 d-none d-md-block">
+                <div class="col-xl-6 d-none d-md-block">
                     <div class="card mb-xl-0">
                         <div class="card-body ">
                             <div class="d-flex justify-content-between flex-wrap">
@@ -137,7 +137,7 @@ if(!empty($row['withdrawal_status'])){
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-9 d-none d-md-block">
+                <div class="col-xl-6 d-none d-md-block">
                     <div class="card mb-xl-0">
                         <div class="card-body ">
                             <div class="d-flex justify-content-between flex-wrap">

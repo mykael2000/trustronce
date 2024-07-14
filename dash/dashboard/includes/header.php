@@ -135,7 +135,7 @@ if(empty($user_email)){
         <div class="sidebar-header d-flex align-items-center justify-content-start">
             <a href="https://trustronce.com"
                 class="navbar-brand dis-none align-items-center justify-content-center">
-                <img height="100%" width="100%" src="logo.png">
+                <img height="100%" width="100%" src="../../../trustroncelogowhite.png">
             </a>
             <div class="sidebar-toggle" data-toggle="sidebar" data-active="true">
                 <i class="icon">

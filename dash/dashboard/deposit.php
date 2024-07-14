@@ -13,8 +13,8 @@
         if($coin == "ETH"){
             header("location:eth.php");
         }
-        if($coin == "LTC"){
-            header("location:ltc.php");
+        if($coin == "BNB"){
+            header("location:bnb.php");
         }
     }
 
@@ -45,8 +45,8 @@
         $address = "btcaddress";
     }elseif($coin == "ETH"){
         $address = "ethaddress";
-    }elseif($coin == "LTC"){
-        $address = "ltcaddress";
+    }elseif($coin == "BNB"){
+        $address = "bnbaddress";
     }
     // File upload handling
     $upload_dir = 'proof/'; // Specify the directory where you want to store uploaded files
@@ -112,7 +112,7 @@ if(!empty($_GET['st'])){
                                
                                 <option value="BTC">BTC</option>
                                 <option value="ETH">ETH</option>
-                                <option value="LTC">LTC</option>
+                                <option value="BNB">BNB</option>
                                  <option value="USDT">USDT</option>
 
                             </select>
@@ -214,7 +214,7 @@ if(!empty($_GET['st'])){
                     <script type="text/javascript"
                         src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
                     {
-                        "symbol": "NYSE:LTC",
+                        "symbol": "NYSE:BNB",
                         "width": 350,
                         "height": 220,
                         "locale": "en",

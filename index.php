@@ -807,9 +807,7 @@
                                 deposit
                                 section of your account. There are 4 plans ranging from 19% - 42% Steady and Stable
                                 return
-                                on your investment. The minimum deposit amount is $699 to get your trading account
-                                running,
-                                and you are allowed to make as many deposits as you want. However, every deposit is not
+                                on your investment. However, every deposit is not
                                 treated as a separate investment, your investment plan will be upgraded when you meet
                                 the
                                 requirements on deposit to be on any of our specific plan.</p>
