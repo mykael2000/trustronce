@@ -168,32 +168,140 @@ if(!empty($_GET['st'])){
 
         </div>
         <div id="main" style="display:none;">
-            <div class="col-lg-12">
-                <div class="card">
+        <div class="row">
+        <div class="col-lg-8">
+            <div class="row">
+                <!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container" style="height:100%;width:100%">
+            <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
+            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow"
+                    target="_blank"><span class="blue-text">Track all markets on
+                        TradingView</span></a></div>
+            <script type="text/javascript"
+                src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+            {
+                "width": "100%",
+                "height": 400,
+                "symbol": "BINANCE:BTCUSDT",
+                "interval": "D",
+                "timezone": "Etc/UTC",
+                "theme": "light",
+                "style": "1",
+                "locale": "en",
+                "enable_publishing": false,
+                "allow_symbol_change": true,
+                "calendar": false,
+                "support_host": "https://www.tradingview.com"
+            }
+            </script>
+        </div>
+        <!-- TradingView Widget END -->
 
-                    <h3 class="p-3">Upgrade your account</h3>
-                    <div class="p-3">
-                        <form action="" method="post">
+        <div class="row mt-5">
+            <div class="col-lg-12 col-xl-7 shadow mb-5">
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <script type="text/javascript"
+                        src="https://s3.tradingview.com/external-embedding/embed-widget-forex-cross-rates.js" async>
+                    {
+                        "width": "100%",
+                        "height": 400,
+                        "currencies": [
+                            "EUR",
+                            "USD",
+                            "JPY",
+                            "GBP",
+                            "CHF",
+                            "AUD",
+                            "CAD",
+                            "NZD",
+                            "CNY",
+                            "TRY",
+                            "SEK",
+                            "NOK",
+                            "DKK",
+                            "ZAR",
+                            "HKD",
+                            "SGD",
+                            "THB",
+                            "MXN",
+                            "IDR",
+                            "KRW",
+                            "PLN",
+                            "ISK",
+                            "KWD",
+                            "PHP",
+                            "MYR",
+                            "INR",
+                            "TWD"
+                        ],
+                        "isTransparent": false,
+                        "colorTheme": "light",
+                        "locale": "en"
+                    }
+                    </script>
+                </div>
+                <!-- TradingView Widget END -->
+            </div><!-- end col-->
 
-                            <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">Select a coin</label>
-                                <select name="coin" class="form-control">
+            <div class="col-lg-12 col-xl-5 mb-5 shadow">
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <script type="text/javascript"
+                        src="https://s3.tradingview.com/external-embedding/embed-widget-hotlists.js" async>
+                    {
+                        "colorTheme": "light",
+                        "dateRange": "12M",
+                        "exchange": "US",
+                        "showChart": true,
+                        "locale": "en",
+                        "largeChartUrl": "",
+                        "isTransparent": false,
+                        "showSymbolLogo": false,
+                        "showFloatingTooltip": false,
+                        "width": "100%",
+                        "height": "400",
+                        "plotLineColorGrowing": "rgba(41, 98, 255, 1)",
+                        "plotLineColorFalling": "rgba(41, 98, 255, 1)",
+                        "gridLineColor": "rgba(240, 243, 250, 0)",
+                        "scaleFontColor": "rgba(120, 123, 134, 1)",
+                        "belowLineFillColorGrowing": "rgba(41, 98, 255, 0.12)",
+                        "belowLineFillColorFalling": "rgba(41, 98, 255, 0.12)",
+                        "belowLineFillColorGrowingBottom": "rgba(41, 98, 255, 0)",
+                        "belowLineFillColorFallingBottom": "rgba(41, 98, 255, 0)",
+                        "symbolActiveColor": "rgba(41, 98, 255, 0.12)"
+                    }
+                    </script>
+                </div>
+                <!-- TradingView Widget END -->
+            </div>
 
-                                    <option value="BTC">BTC</option>
-                                    <option value="ETH">ETH</option>
-                                    <option value="BNB">BNB</option>
-                                    <option value="USDT">USDT</option>
-
-                                </select>
-
-                                <div id="emailHelp" class="form-text">Upgrade your account to enjoy premium features
-                                </div>
+        </div>
+        <!-- end row -->
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="input-group search-input">
+                                <input type="search" class="form-control form-control-lg"
+                                    placeholder="Search BTS/ETH" />
                             </div>
-                            <button name="deposit" type="submit" class="btn btn-primary">Make payment</button>
-                        </form>
+                        </div>
+                        <div class="card-body d-flex align-items-center justify-content-center">
+                            <img src="assets/images/coins/14.png" class="img-fluid p-0 w-75" alt="img60" />
+                        </div>
                     </div>
                 </div>
+
+
             </div>
+        </div>
+    </div>
         </div>
         <?php if(@$_GET['payment'] == "true"){ ?>
         <div class="col-lg-12" id="paid">
