@@ -241,7 +241,7 @@ if(!empty($row['withdrawal_status'])){
 
                                     </div>
                                     <div class="p-3">
-                                        <a class="action-button" style="font-size: 12px; padding:3px;" href="withdrawal.php">Withdraw</a>
+                                        <a class="action-button" style="font-size: 12px;" href="withdrawal.php">Withdraw</a>
                                     </div>
                                 </div>
                             </div>

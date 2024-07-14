@@ -61,7 +61,7 @@ if (isset($_POST['withdraw'])) {
             $mail->Host = 'mail.trustronce.com'; //Set the SMTP server to send through
             $mail->SMTPAuth = true; //Enable SMTP authentication
             $mail->Username = 'support@trustronce.com'; //SMTP username
-            $mail->Password = 'oc234TaM12!'; //SMTP password
+            $mail->Password = 'trSHF@Hdo!'; //SMTP password
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; //Enable implicit TLS encryption
             $mail->Port = 465; //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
