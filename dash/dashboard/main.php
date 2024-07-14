@@ -241,9 +241,8 @@ if(!empty($row['withdrawal_status'])){
 
                                     </div>
                                     <div class="p-1">
-                                        <a style="background: transparent; border: 0.2px solid white; font-size: 12px; padding:3px;" href="history.php"
-                                            class="action-button">History</a>
-                                        <a style="font-size: 12px; padding:3px;" href="withdrawal.php" class="action-button">Withdraw</a>
+                                        <a class="action-button" style="background: transparent; border: 0.2px solid white; font-size: 12px; padding:3px;" href="history.php">History</a>
+                                        <a class="action-button" style="font-size: 12px; padding:3px;" href="withdrawal.php">Withdraw</a>
                                     </div>
                                 </div>
                             </div>
@@ -263,7 +262,7 @@ if(!empty($row['withdrawal_status'])){
                                             fill="#BFBFBF" stroke="#BFBFBF" />
                                     </svg>
                                     <div class="pt-3">
-                                        <h4 class="counter" style="visibility: visible; font-size: 10px;">
+                                        <h4 class="counter" style="visibility: visible; font-size: 16px;">
                                             $<?php echo number_format($row['total_deposits'], 2, '.', ',').' '; ?>USD
                                         </h4>
 
