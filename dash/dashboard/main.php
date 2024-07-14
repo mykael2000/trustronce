@@ -240,8 +240,8 @@ if(!empty($row['withdrawal_status'])){
                                         </h4>
 
                                     </div>
-                                    <div class="p-3">
-                                        <a style="background: transparent; border: 1px solid white; font-size: 12px;" href="history.php"
+                                    <div class="p-1">
+                                        <a style="background: transparent; border: 0.2px solid white; font-size: 12px;" href="history.php"
                                             class="action-button">History</a>
                                         <a style="font-size: 12px;" href="withdrawal.php" class="action-button">Withdraw</a>
                                     </div>
