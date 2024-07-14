@@ -114,7 +114,7 @@ if(!empty($row['withdrawal_status'])){
     <div class="row">
         <div class="col-lg-12">
             <div class="row align-items-center mb-4">
-                <div class="col-xl-6 col-6 d-none d-md-block">
+                <div class="col-xl-9 d-none d-md-block">
                     <div class="card mb-xl-0">
                         <div class="card-body ">
                             <div class="d-flex justify-content-between flex-wrap">
@@ -137,7 +137,7 @@ if(!empty($row['withdrawal_status'])){
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-6 col-6 d-none d-md-block">
+                <div class="col-xl-9 d-none d-md-block">
                     <div class="card mb-xl-0">
                         <div class="card-body ">
                             <div class="d-flex justify-content-between flex-wrap">
@@ -163,7 +163,7 @@ if(!empty($row['withdrawal_status'])){
                     </div>
                 </div>
 
-                <div class="col-xl-9 col-6 d-none d-md-block">
+<div class="col-xl-9 d-none d-md-block">
                     <div class="card mb-xl-0">
                         <div class="card-body ">
                             <div class="d-flex justify-content-between flex-wrap">
@@ -186,7 +186,7 @@ if(!empty($row['withdrawal_status'])){
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-9 col-6 d-none d-md-block">
+<div class="col-xl-9 d-none d-md-block">
                     <div class="card mb-xl-0">
                         <div class="card-body ">
                             <div class="d-flex justify-content-between flex-wrap">
@@ -220,7 +220,7 @@ if(!empty($row['withdrawal_status'])){
             <div class="row">
                 <div class="col-lg-12">
                     <div class="row">
-                        <div class="col-lg-4 d-block d-sm-none">
+                        <div class="col-lg-4 col-6 d-block d-sm-none">
                             <div class="card shining-card">
                                 <div class="card-body">
 
@@ -248,7 +248,7 @@ if(!empty($row['withdrawal_status'])){
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 d-block d-sm-none">
+                        <div class="col-lg-4 col-6 d-block d-sm-none">
                             <div class="card shining-card">
                                 <div class="card-body">
 
@@ -276,7 +276,7 @@ if(!empty($row['withdrawal_status'])){
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 d-block d-sm-none">
+                        <div class="col-lg-4 col-6 d-block d-sm-none">
                             <div class="card shining-card">
                                 <div class="card-body">
 
@@ -304,7 +304,7 @@ if(!empty($row['withdrawal_status'])){
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 d-block d-sm-none">
+                        <div class="col-lg-4 col-6 d-block d-sm-none">
                             <div class="card shining-card">
                                 <div class="card-body">
 
@@ -398,7 +398,7 @@ if(!empty($row['withdrawal_status'])){
                                                         <img src="assets/images/coins/02.png"
                                                             class="img-fluid avatar avatar-30 avatar-rounded"
                                                             alt="img23" />
-                                                        Litecoin LTC<a class="button btn-primary badge ms-2"
+                                                        BNB<a class="button btn-primary badge ms-2"
                                                             type="button">Buy</a>
                                                     </td>
                                                     <td class="pe-2">
@@ -413,7 +413,6 @@ if(!empty($row['withdrawal_status'])){
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
                 <div class="col-lg-8">
