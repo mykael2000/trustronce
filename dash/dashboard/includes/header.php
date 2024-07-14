@@ -131,7 +131,7 @@ if(empty($user_email)){
         </script>
     </div>
     <!-- TradingView Widget END -->
-    <aside class="sidebar sidebar-default navs-rounded">
+    <aside style="z-index: 9999999999;" class="sidebar sidebar-default navs-rounded">
         <div class="sidebar-header d-flex align-items-center justify-content-start">
             <a href="https://trustronce.com"
                 class="navbar-brand dis-none align-items-center justify-content-center">
