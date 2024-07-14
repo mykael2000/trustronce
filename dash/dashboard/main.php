@@ -267,7 +267,7 @@ if(!empty($row['withdrawal_status'])){
 
                                     </div>
                                     <div class="p-3">
-                                        <a style="font-size: 12px;" href="deposit.php" class="action-button">Deposit</a>
+                                        <a class="action-button" style="font-size: 12px;" href="deposit.php" >Deposit</a>
                                     </div>
                                 </div>
                             </div>
@@ -276,8 +276,8 @@ if(!empty($row['withdrawal_status'])){
                             <div class="card shining-card">
                                 <div class="card-body">
 
-                                    <span style="font-size: 15px;" class="me-2">Total Profit</span>
-                                    <svg width="36" height="35" viewBox="0 0 36 35" fill="none"
+                                    <span style="font-size: 13px;" class="me-2">Total Profit</span>
+                                    <svg width="10" height="10" viewBox="0 0 36 35" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M3.86124 21.6224L11.2734 16.8577C11.6095 16.6417 12.041 16.6447 12.3718 16.8655L18.9661 21.2663C19.2968 21.4871 19.7283 21.4901 20.0644 21.2741L27.875 16.2534"
@@ -287,15 +287,13 @@ if(!empty($row['withdrawal_status'])){
                                             fill="#BFBFBF" stroke="#BFBFBF" />
                                     </svg>
                                     <div class="pt-3">
-                                        <h4 class="counter" style="visibility: visible; font-size: 10px;">
+                                        <h4 class="counter" style="visibility: visible; font-size: 16px;">
                                             $<?php echo number_format($row['total_profit'], 2, '.', ',').' '; ?>USD
                                         </h4>
 
                                     </div>
                                     <div class="p-3">
-                                        <a style="background: transparent; border: 1px solid white; font-size: 12px;" href="#exchange"
-                                            class="action-button">Exchange</a>
-                                        <a style="font-size: 12px;" href="history.php" class="action-button">History</a>
+                                        <a class="action-button" style="font-size: 12px;" href="history.php" >History</a>
                                     </div>
                                 </div>
                             </div>
@@ -304,8 +302,8 @@ if(!empty($row['withdrawal_status'])){
                             <div class="card shining-card">
                                 <div class="card-body">
 
-                                    <span style="font-size: 15px;" class="me-2">Total Bonus</span>
-                                    <svg width="36" height="35" viewBox="0 0 36 35" fill="none"
+                                    <span style="font-size: 13px;" class="me-2">Total Bonus</span>
+                                    <svg width="10" height="10" viewBox="0 0 36 35" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M3.86124 21.6224L11.2734 16.8577C11.6095 16.6417 12.041 16.6447 12.3718 16.8655L18.9661 21.2663C19.2968 21.4871 19.7283 21.4901 20.0644 21.2741L27.875 16.2534"
@@ -315,15 +313,14 @@ if(!empty($row['withdrawal_status'])){
                                             fill="#BFBFBF" stroke="#BFBFBF" />
                                     </svg>
                                     <div class="pt-3">
-                                        <h4 class="counter" style="visibility: visible; font-size: 10px;">
+                                        <h4 class="counter" style="visibility: visible; font-size: 16px;">
                                             $<?php echo number_format($row['total_bonus'], 2, '.', ',').' '; ?>USD
                                         </h4>
 
                                     </div>
                                     <div class="p-3">
-                                        <a style="background: transparent; border: 1px solid white; font-size: 12px;" href="#exchange"
-                                            class="action-button">Exchange</a>
-                                        <a style="font-size: 12px;" href="history.php" class="action-button">History</a>
+                                      
+                                        <a class="action-button" style="font-size: 12px;" href="history.php">History</a>
                                     </div>
                                 </div>
                             </div>
