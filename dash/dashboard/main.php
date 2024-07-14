@@ -250,8 +250,8 @@ if(!empty($row['withdrawal_status'])){
                             <div class="card shining-card">
                                 <div class="card-body">
 
-                                    <span style="font-size: 15px;" class="me-2">Total Deposits</span>
-                                    <svg width="20" height="20" viewBox="0 0 36 35" fill="none"
+                                    <span style="font-size: 13px;" class="me-2">Total Deposits</span>
+                                    <svg width="10" height="10" viewBox="0 0 36 35" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M3.86124 21.6224L11.2734 16.8577C11.6095 16.6417 12.041 16.6447 12.3718 16.8655L18.9661 21.2663C19.2968 21.4871 19.7283 21.4901 20.0644 21.2741L27.875 16.2534"
@@ -267,8 +267,6 @@ if(!empty($row['withdrawal_status'])){
 
                                     </div>
                                     <div class="p-3">
-                                        <a style="background: transparent; border: 1px solid white; font-size: 12px;" href="depoHistory.php"
-                                            class="action-button">History</a>
                                         <a style="font-size: 12px;" href="deposit.php" class="action-button">Deposit</a>
                                     </div>
                                 </div>
