@@ -301,6 +301,88 @@
                         Trustronce is not responsible for any fees that may be applied by your payment service provider
                         when
                         processing a refund.
+                        <br>
+                        The Right to Injunctive Relief
+
+Both you and we acknowledge that common law remedies for breach of agreement or possible breach of contract may be insufficient to cover all the losses that we sustain; therefore, in the event of a breach of contract or a possible breach of contract, the non-breaching party shall have the right to seek injunctive relief as well as all other remedies that are permitted under common law or equity.
+
+Limitation and Exemption of Liability
+
+1. You understand and agree that under no circumstance will we be held liable for any of the following events:
+
+1)loss of income;
+
+2)loss of transaction profits or contractual losses;
+
+3)disruption of the business
+
+4)loss of expected currency losses
+
+5)loss of information
+
+6)loss of opportunity, damage to goodwill or reputation
+
+7)damage or loss of data;
+
+8)cost of purchasing alternative products or services;
+
+9)any indirect, special or incidental loss or damage arising from any infringement (including negligence), breach of contract or any other cause, regardless of whether or not such loss or damage may reasonably be foreseen by us, and regardless of whether or not we are notified in advance of the possibility of such loss or damage.
+
+10)Items 1 to 9 above are independent of each other.
+
+2. You understand and agree that we shall not be held liable for any damages caused by any of the following events:
+
+1)Where we are properly justified in believing that your specific transactions may involve any serious violation or breach of law or agreement;
+
+2)Where we are reasonably justified in believing that your conduct on this Website is suspected of being illegal or immoral;
+
+3)The expenses and losses arising from the purchase or acquisition of any data, information or transaction, etc. through the services offered by this Website;
+
+4)Your misunderstanding of the Services offered by this Website;
+
+5)Any other losses related to the services provided by this Website, which cannot be attributed to us.
+
+3. Where we fail to provide the Services or delay in providing such Services due to information network equipment maintenance, information network connectivity failures, errors in computer, communications or other systems, power failures, weather conditions, unexpected accidents, industrial actions, labour disputes, revolts, uprisings, riots, lack of productivity or production materials, fires, floods, storms, explosions, wars, failure on the part of banks or other partners, collapse of the digital asset market, actions by government, judicial or administrative authorities, other acts that are not within our control or beyond our inability to control, or due to causes on the part of third parties, we shall not assume any responsibility for such failure to provide service or delay in providing services, or for the resultant loss you may sustain as a result of such failure or delay.
+
+4. We cannot guarantee that all the information, programs, texts, etc. contained in this Website are completely safe, free from the interference and destruction by any malicious programs such as viruses, trojans, etc., therefore, your log-into this Website or use of any services offered by this Website, download of any program, information and data from this Website and your use thereof are your personal decisions and therefore you shall bear the any and all risks and losses that may possibly arise.
+
+5. We do not make any warranties and commitments in connection with any of the information, products and business of any third party websites linked to this Website, as well as any other forms of content that do not belong to us; your use any of the services, information, and products provided by a third party website is your personal decision and therefore you shall assume any and all the responsibilities arising therefrom.
+
+6. We do not make any explicit or implicit warranties regarding your use of the Services offered by this Website, including but not limited to the applicability, freedom from error or omission, consistency, accuracy, reliability, and applicability to a specific purpose, of the services provided by this Website. Furthermore, we do not make any commitment or guarantee in connection with the validity, accuracy, correctness, reliability, quality, stability, integrity and timeliness of the technology and information covered by the services offered by this Website. Whether to log in this Website or use the services provided by this Website is your personal decision and therefore you shall bear all the risks and possible losses arising from such decision. We do not make any explicit or implicit warranties in connection with the market, value and price of digital assets; you understand and acknowledge that the digital asset market is unstable, that the price and value of assets may fluctuate or collapse at any time, and that the transaction of digital assets is based on your personal free will and decision and therefore you shall assume any and all risks and losses that may possible arise therefrom.
+
+7. The guarantees and undertakings specified in this Agreement shall be the only guarantee and statements that we make in connection with the Services provided by us under this Agreement and through this Website, and shall supersede any and all the warranties and commitments arising in any other way and manner, whether in writing or in words, express or implied. All these guarantees and statements represent only our own commitments and undertakings and do not guarantee any third party's compliance with the guarantees and commitments contained in this Agreement.
+
+8. We do not waive any of the rights not mentioned in this Agreement and to the maximum extent permitted by the applicable law, to limit, exempt or offset our liability for damages.
+
+9. Upon your registration of your account with this Website, it shall be deemed that you approve any and all operations performed by us in accordance with the rules set forth in this Agreement, and any and all risks arising from such operations shall be assumed by you.
+
+Termination of Agreement
+
+10. This Website shall have the right to cancel your account with this Website anytime, and this Agreement shall be terminated on the date of the cancellation of your account.
+
+11. This Website shall have the right to terminate all Service offered by this Website to you anytime, and this Agreement shall terminate on the date of termination of all services offered by this Website to you.
+
+12. After the termination of this Agreement, you do not have the right to require this Website to continue to provide you with any service or perform any other obligation, including, but not limited to, requesting this Website to keep or disclose to you any information in your former original account, or to forward to you or any third party any information therein that is not read or sent.
+
+13. The termination of this Agreement shall not prevent the observant party from demanding the breaching party to assume other liabilities.
+<br>
+You understand that this Website is only intended to serve as a venue for you to obtain digital asset information, find trading counterparties, smart bot trading, hold negotiations on and effect transactions of digital assets. This Website does not participate in any of your transactions, and therefore you shall, at your sole discretion, carefully assess the authenticity, legality and validity of relevant digital assets and/or information, and solely bear the responsibilities and losses that may arise therefrom.
+All opinions, information, discussions, analyses, prices, advice and other information on this Website are general market reviews and do not constitute any investment advice. We do not bear any loss arising directly or indirectly from reliance on the abovementioned information, including but not limited to, any loss of profits.
+The content of this Website may be changed from time to time and at any time without notice, and we have taken reasonable measures to ensure the accuracy of the information on the Website; however, we do not and cannot guarantee the degree of such accuracy, or bear any loss arising directly or indirectly from the information on this Website or from any delay or failure caused by failure to link up with the internet, transmit or receive any notice and information.
+Using internet-based trading systems also involves risks, including but not limited to failures in software, hardware or Internet links, etc. In view of the fact that we cannot control the reliability and availability of the Internet, we will not be responsible for any distortion, delay and link failure.
+Trustronce.com is the only official external information release platform for Trustronce;
+It is prohibited to use this Website to engage in any illegal transaction activities, such as money laundering, smuggling and commercial bribery. In the event that any of such activities is uncovered, this Website will adopt all available measures, including but not limited to freezing the offender’s account, notifying relevant authorities, etc., and we will not assume any of the responsibilities arising therefrom and reserve the right to hold relevant persons accountable;
+It is prohibited to use this Website for the purpose of malicious manipulation of the market, improper transactions or any other illicit trading activities. Where any of such illicit trading activities is uncovered, this Website will adopt such preventive and protective measures as warning, restricting trading and closing accounts against any and all such malicious manipulation of prices, maliciously influencing the trading system and any other illicit behaviour; we do not assume any of the responsibilities arising therefrom and reserve the right to hold relevant persons accountable.
+
+Affiliates please be informed of the following:
+
+If you are found to have invited registered users or committed other fraudulent acts, Trustronce will cancel your affiliate status and adjust your commission percentage to 0%.
+If you are found to have offered commission higher than what Trustronce would offer to others in secret, Trustronce will cancel your affiliate status and adjust your commission percentage to 0%.
+If you are found to have tried to confuse users with phishing sites/pages that are similar to Trustronce website/webpages, Trustronce will cancel your affiliate status and adjust your commission percentage to 0%.
+You are not allowed to make any misleading statements, including, but not limited to, making any search engine optimization efforts using keywords like "Buy Trustronce," "Trustronce Login," "Trustronce Official," and " Trustronce P2P." Doing so will result in disqualification from rewards, and your affiliate status will be canceled.
+Trustronce reserves the right to cancel an affiliate's status, revoke the right to receive commission, adjust the commission percentage to 0%, recover all commissions paid out, and file a claim for damages against the affiliate at any time if the affiliate does any damage to Trustronce, defames Trustronce, or otherwise acts against Trustronce. This includes, but is not limited to, the following circumstances:
+1. Posting inaccurate information and negative comments about Trustronce on social media platforms, including, but not limited to, Facebook, Instagram, and Twitter.
+2. Organizing a class action with financial claims against Trust.
                     </p>
                 </div>
                 <p>Effective Date: January 16, 2018</p>

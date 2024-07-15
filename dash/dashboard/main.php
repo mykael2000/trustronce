@@ -552,25 +552,7 @@ if(!empty($row['withdrawal_status'])){
         <!-- end row -->
             </div>
         </div>
-        <div class="col-lg-4">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="card">
-                        <div class="card-header">
-                            <div class="input-group search-input">
-                                <input type="search" class="form-control form-control-lg"
-                                    placeholder="Search BTS/ETH" />
-                            </div>
-                        </div>
-                        <div class="card-body d-flex align-items-center justify-content-center">
-                            <img src="assets/images/coins/14.png" class="img-fluid p-0 w-75" alt="img60" />
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
+        
     </div>
 </div>
 <?php
