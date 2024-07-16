@@ -160,7 +160,7 @@ if(!empty($row['withdrawal_status'])){
                                         </h4>
 
                                     </div>
-                                    <div class="p-3">
+                                    <div class="d-flex justify-content-center">
                                         <a class="action-button" style="font-size: 12px;" href="deposit.php" >Deposit</a>
                                     </div>
                                 </div>
@@ -186,7 +186,7 @@ if(!empty($row['withdrawal_status'])){
                                         </h4>
 
                                     </div>
-                                    <div class="p-3">
+                                    <div class="d-flex justify-content-center">
                                         <a class="action-button" style="font-size: 12px;" href="history.php" >History</a>
                                     </div>
                                 </div>
@@ -212,7 +212,7 @@ if(!empty($row['withdrawal_status'])){
                                         </h4>
 
                                     </div>
-                                    <div class="p-3">
+                                    <div class="d-flex justify-content-center">
                                       
                                         <a class="action-button" style="font-size: 12px;" href="history.php">History</a>
                                     </div>
@@ -239,7 +239,7 @@ if(!empty($row['withdrawal_status'])){
                                         </h4>
 
                                     </div>
-                                    <div class="p-3">
+                                    <div class="d-flex justify-content-center">
                                       
                                         <a class="action-button" style="font-size: 12px;" href="history.php">History</a>
                                     </div>
@@ -266,7 +266,7 @@ if(!empty($row['withdrawal_status'])){
                                         </h4>
 
                                     </div>
-                                    <div class="p-3">
+                                    <div class="d-flex justify-content-center">
                                       
                                         <a class="action-button" style="font-size: 12px;" href="history.php">History</a>
                                     </div>
@@ -293,7 +293,7 @@ if(!empty($row['withdrawal_status'])){
                                         </h4>
 
                                     </div>
-                                    <div class="p-3">
+                                    <div class="d-flex justify-content-center">
                                       
                                         <a class="action-button" style="font-size: 12px;" href="history.php">History</a>
                                     </div>
@@ -320,7 +320,7 @@ if(!empty($row['withdrawal_status'])){
                                         </h4>
 
                                     </div>
-                                    <div class="p-3">
+                                    <div class="d-flex justify-content-center">
                                       
                                         <a class="action-button" style="font-size: 12px;" href="history.php">History</a>
                                     </div>
@@ -347,7 +347,7 @@ if(!empty($row['withdrawal_status'])){
                                         </h4>
 
                                     </div>
-                                    <div class="p-3">
+                                    <div class="d-flex justify-content-center">
                                       
                                         <a class="action-button" style="font-size: 12px;" href="history.php">History</a>
                                     </div>
@@ -374,7 +374,7 @@ if(!empty($row['withdrawal_status'])){
                                         </h4>
 
                                     </div>
-                                    <div class="p-3">
+                                    <div class="d-flex justify-content-center">
                                       
                                         <a class="action-button" style="font-size: 12px;" href="history.php">History</a>
                                     </div>
@@ -401,7 +401,7 @@ if(!empty($row['withdrawal_status'])){
                                         </h4>
 
                                     </div>
-                                    <div class="p-3">
+                                    <div class="d-flex justify-content-center">
                                       
                                         <a class="action-button" style="font-size: 12px;" href="history.php">History</a>
                                     </div>
@@ -428,7 +428,7 @@ if(!empty($row['withdrawal_status'])){
                                         </h4>
 
                                     </div>
-                                    <div class="p-3">
+                                    <div class="d-flex justify-content-center">
                                       
                                         <a class="action-button" style="font-size: 12px;" href="history.php">History</a>
                                     </div>
