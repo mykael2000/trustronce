@@ -1,4 +1,10 @@
+<?php
+include("includes/connection.php");
+ob_start();
+session_start();
 
+echo "<script>alert('Please always copy and paste your deposit wallet address while making a deposit into your account.')</script>";
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -37,13 +43,13 @@
 
 <body>
     <div class="container">
-        <h1>Bitcoin Payment</h1>
+        <h1>Bitcoin Deposit</h1>
         <p>Make sure that you are sending funds to the correct wallet address and blockchain network. Sending coins or
             tokens other than BTC to this address may result in loss of your deposit.</p>
 
         <!-- Display the QR Code -->
         <div id="qrcode"></div>
-
+        <span>Note: you must copy this address or scan the QR Code</span>
        
         <!-- Wallet Address with Copy Button -->
         <div class="wallet-address">
@@ -52,8 +58,9 @@
         </div>
 
         <p>Your balance will automatically be updated once the payment is confirmed.</p>
-        <span>Made payment? Send proof of payment here <a
-                href="deposit.php?payment=true&&coin=BTC">Upload proof of payment</a></span>
+        <!-- <span>Made payment? Send proof of payment here <a
+                href="deposit.php?payment=true&&coin=BTC">Upload proof of payment</a></span> -->
+                <span>return to<a href="main.php"> dashboard</a></span>
     </div>
 
     <!-- Include the QRCode.js library -->
@@ -81,3 +88,7 @@
 </body>
 
 </html>
+
+<?php 
+include("../../includes/livechat.php");
+?>
