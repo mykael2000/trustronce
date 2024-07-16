@@ -205,30 +205,6 @@ if(!empty($_GET['st'])){
                 <!-- TradingView Widget END -->
             </div>
         </div>
-        <div class="col-lg-5 p-1">
-            <div class="card">
-                <!-- TradingView Widget BEGIN -->
-                <div class="tradingview-widget-container">
-                    <div class="tradingview-widget-container__widget"></div>
-
-                    <script type="text/javascript"
-                        src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
-                    {
-                        "symbol": "NYSE:BNB",
-                        "width": 350,
-                        "height": 220,
-                        "locale": "en",
-                        "dateRange": "12M",
-                        "colorTheme": "dark",
-                        "isTransparent": true,
-                        "autosize": false,
-                        "largeChartUrl": ""
-                    }
-                    </script>
-                </div>
-                <!-- TradingView Widget END -->
-            </div>
-        </div>
     </div>
 </div>
 
