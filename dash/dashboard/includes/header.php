@@ -244,7 +244,7 @@ if(empty($user_email)){
                             <span class="item-name">Upgrade Account</span>
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="withdrawal_pin.php">
                             <i class="icon">
                                 <svg width="22" viewBox="0 0 30 30" fill="none" xmlns="https://www.w3.org/2000/svg">
@@ -260,7 +260,7 @@ if(empty($user_email)){
                             </i>
                             <span class="item-name">Withdrawal pin</span>
                         </a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="profile.php">
                             <i class="icon">
