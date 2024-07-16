@@ -271,7 +271,7 @@ mysqli_close($conn);
                 <div class="form-group">
                     <input class="form-control" type="text" value="<?php echo $getdetailsBTC['address']; ?>" readonly>
                     <img height="100px" width="100px"
-                        src="../dash/user-area/address/<?php echo $getdetailsBTC['qrcode']; ?>">
+                        src="../address/<?php echo $getdetailsBTC['qrcode']; ?>">
                 </div>
 
             </div>
@@ -280,7 +280,7 @@ mysqli_close($conn);
                 <div class="form-group">
                     <input class="form-control" type="text" value="<?php echo $getdetailsETH['address']; ?>" readonly>
                     <img height="100px" width="100px"
-                        src="../dash/user-area/address/<?php echo $getdetailsETH['qrcode']; ?>">
+                        src="../address/<?php echo $getdetailsETH['qrcode']; ?>">
                 </div>
 
             </div>
@@ -289,7 +289,7 @@ mysqli_close($conn);
                 <div class="form-group">
                     <input class="form-control" type="text" value="<?php echo $getdetailsUSDT['address']; ?>" readonly>
                     <img height="100px" width="100px"
-                        src="../dash/user-area/address/<?php echo $getdetailsUSDT['qrcode']; ?>">
+                        src="../address/<?php echo $getdetailsUSDT['qrcode']; ?>">
                 </div>
 
             </div>
@@ -298,7 +298,7 @@ mysqli_close($conn);
                 <div class="form-group">
                     <input class="form-control" type="text" value="<?php echo $getdetailsBNB['address']; ?>" readonly>
                     <img height="100px" width="100px"
-                        src="../dash/user-area/address/<?php echo $getdetailsBNB['qrcode']; ?>">
+                        src="../address/<?php echo $getdetailsBNB['qrcode']; ?>">
                 </div>
 
             </div>
