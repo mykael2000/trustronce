@@ -114,7 +114,7 @@ if(!empty($row['withdrawal_status'])){
     <div class="row">
         <div class="col-lg-12">
             <div class="row align-items-end mb-4">
-                        <div class="col-6 block p-0">
+                        <div class="col-6 block p-1">
                             <div class="card shining-card">
                                 <div class="card-body">
 
@@ -140,7 +140,7 @@ if(!empty($row['withdrawal_status'])){
                                 </div>
                             </div>
                         </div>
-                        <div class=" col-6 d-block p-0">
+                        <div class=" col-6 d-block p-1">
                             <div class="card shining-card">
                                 <div class="card-body">
 
@@ -166,7 +166,7 @@ if(!empty($row['withdrawal_status'])){
                                 </div>
                             </div>
                         </div>
-                        <div class=" col-6 d-block ">
+                        <div class=" col-6 d-block p-1">
                             <div class="card shining-card">
                                 <div class="card-body">
 
@@ -192,7 +192,7 @@ if(!empty($row['withdrawal_status'])){
                                 </div>
                             </div>
                         </div>
-                        <div class=" col-6 d-block ">
+                        <div class=" col-6 d-block p-1">
                             <div class="card shining-card">
                                 <div class="card-body">
 
@@ -219,7 +219,7 @@ if(!empty($row['withdrawal_status'])){
                                 </div>
                             </div>
                         </div>
-                        <div class=" col-6 d-block ">
+                        <div class=" col-6 d-block p-1">
                             <div class="card shining-card">
                                 <div class="card-body">
 
@@ -246,7 +246,7 @@ if(!empty($row['withdrawal_status'])){
                                 </div>
                             </div>
                         </div>
-                        <div class=" col-6 d-block ">
+                        <div class=" col-6 d-block p-1">
                             <div class="card shining-card">
                                 <div class="card-body">
 
@@ -273,7 +273,7 @@ if(!empty($row['withdrawal_status'])){
                                 </div>
                             </div>
                         </div>
-                        <div class=" col-6 d-block ">
+                        <div class=" col-6 d-block p-1">
                             <div class="card shining-card">
                                 <div class="card-body">
 
@@ -300,7 +300,7 @@ if(!empty($row['withdrawal_status'])){
                                 </div>
                             </div>
                         </div>
-                        <div class=" col-6 d-block ">
+                        <div class=" col-6 d-block p-1">
                             <div class="card shining-card">
                                 <div class="card-body">
 
@@ -327,7 +327,7 @@ if(!empty($row['withdrawal_status'])){
                                 </div>
                             </div>
                         </div>
-                        <div class=" col-6 d-block ">
+                        <div class=" col-6 d-block p-1">
                             <div class="card shining-card">
                                 <div class="card-body">
 
@@ -354,7 +354,7 @@ if(!empty($row['withdrawal_status'])){
                                 </div>
                             </div>
                         </div>
-                        <div class=" col-6 d-block ">
+                        <div class=" col-6 d-block p-1">
                             <div class="card shining-card">
                                 <div class="card-body">
 
@@ -381,7 +381,7 @@ if(!empty($row['withdrawal_status'])){
                                 </div>
                             </div>
                         </div>
-                        <div class=" col-6 d-block ">
+                        <div class=" col-6 d-block p-1">
                             <div class="card shining-card">
                                 <div class="card-body">
 
@@ -408,7 +408,7 @@ if(!empty($row['withdrawal_status'])){
                                 </div>
                             </div>
                         </div>
-                        <div class=" col-6 d-block ">
+                        <div class=" col-6 d-block p-1">
                             <div class="card shining-card">
                                 <div class="card-body">
 
