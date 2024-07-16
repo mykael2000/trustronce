@@ -1,6 +1,6 @@
 <?php
 session_start();
-include("../dashboard/includes/connection.php");
+include("../includes/connection.php");
 if (isset($_POST['login'])) {
     $email = $_POST["email"];
     $password = $_POST["password"];
