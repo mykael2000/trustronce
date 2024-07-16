@@ -134,7 +134,7 @@ if(!empty($row['withdrawal_status'])){
                                         </h4>
 
                                     </div>
-                                    <div class="p-3">
+                                    <div class="d-flex justify-content-center">
                                         <a class="action-button" style="font-size: 12px;" href="withdrawal.php">Withdraw</a>
                                     </div>
                                 </div>
