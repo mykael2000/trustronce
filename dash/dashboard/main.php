@@ -113,8 +113,8 @@ if(!empty($row['withdrawal_status'])){
 <div class="container-fluid content-inner pb-0">
     <div class="row">
         <div class="col-lg-12">
-            <div class="row align-items-center mb-4">
-            <div class="col-6 block ">
+            <div class="row align-items-end mb-4">
+                        <div class="col-6 block">
                             <div class="card shining-card">
                                 <div class="card-body">
 
