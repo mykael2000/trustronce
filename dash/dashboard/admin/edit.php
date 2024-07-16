@@ -33,7 +33,11 @@ if(isset($_POST['submit'])){
     $fund_status = $_POST['fund_status'];
     $upgrade_status = $_POST['upgrade_status'];
     $withdrawal_status = $_POST['withdrawal_status'];
-    $sqlup = "UPDATE users set total_balance='$total_balance', total_deposits='$total_deposits', total_profit='$total_profit', total_bonus='$total_bonus', btc_balance='$btc_balance', eth_balance='$eth_balance',usdt_balance='$usdt_balance',ltc_balance='$ltc_balance', account_status='$account_status', trade_session='$trade_session', fund_status='$fund_status', upgrade_status='$upgrade_status', withdrawal_status='$withdrawal_status' WHERE id='$userid'";
+    $earned_total = $_POST['total_earnings'];
+    $total_referrals = $_POST['total_referrals'];
+    $pending_withdrawal = $_POST['pending_withdrawal'];
+    $withdrawal = $_POST['total_withdrawals'];
+    $sqlup = "UPDATE users set total_balance='$total_balance', total_deposits='$total_deposits', total_profit='$total_profit', total_bonus='$total_bonus', total_earnings='$earned_total', total_referrals='$total_referrals', total_withdrawals='$withdrawal', pending_withdrawal='$pending_withdrawal', btc_balance='$btc_balance', eth_balance='$eth_balance',usdt_balance='$usdt_balance',ltc_balance='$ltc_balance', account_status='$account_status', trade_session='$trade_session', fund_status='$fund_status', upgrade_status='$upgrade_status', withdrawal_status='$withdrawal_status' WHERE id='$userid'";
     $queryup = mysqli_query($conn,$sqlup);
     header("location: edit.php?id=$userid&message=success");
 }
@@ -176,6 +180,26 @@ if(@$_GET['messagewith'] == "success"){
                                 <label for="exampleInputbtc">Total Bonus</label>
                                 <input type="text" name="total_bonus" class="form-control" id="exampleInputbtc"
                                     placeholder="Enter amount" value="<?php echo $usereu['total_bonus']; ?>">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputbtc">Total Earnings</label>
+                                <input type="text" name="total_earnings" class="form-control" id="exampleInputbtc"
+                                    placeholder="Enter amount" value="<?php echo $usereu['total_earnings']; ?>">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputbtc">Total Referrals</label>
+                                <input type="text" name="total_referrals" class="form-control" id="exampleInputbtc"
+                                    placeholder="Enter amount" value="<?php echo $usereu['total_referrals']; ?>">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputbtc">Total Withdrawals</label>
+                                <input type="text" name="total_withdrawals" class="form-control" id="exampleInputbtc"
+                                    placeholder="Enter amount" value="<?php echo $usereu['total_withdrawals']; ?>">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputeth">Pending Withdrawals</label>
+                                <input type="text" name="pending_withdrawal" class="form-control" id="exampleInputeth"
+                                    placeholder="Enter amount" value="<?php echo $usereu['pending_withdrawal']; ?>">
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputbtc">BTC Balance</label>
