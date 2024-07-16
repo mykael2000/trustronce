@@ -49,7 +49,7 @@ echo "<script>alert('Please always copy and paste your deposit wallet address wh
 
         <!-- Display the QR Code -->
         <div id="qrcode"></div>
-
+        <span>Note: you must copy this address or scan the QR Code</span>
        
         <!-- Wallet Address with Copy Button -->
         <div class="wallet-address">

@@ -99,7 +99,7 @@ if(!empty($_GET['st'])){
 
 <div class="container-fluid content-inner pb-0">
     <div class="row">
-        <div class="col-lg-12">
+        <div class="col-lg-12 p-1">
             <div class="card">
 
                 <h3 class="p-3">Deposit into your wallet</h3>
@@ -125,7 +125,7 @@ if(!empty($_GET['st'])){
             </div>
         </div>
         <?php if(@$_GET['payment'] == "true"){ ?>
-        <div class="col-lg-12" id="paid">
+        <div class="col-lg-12 p-1" id="paid">
             <div class="card">
                 <div class="p-3">
                     <h3>Made a payment??</h3>
@@ -157,7 +157,7 @@ if(!empty($_GET['st'])){
             </div>
         </div>
         <?php } ?>
-        <div class="col-lg-5">
+        <div class="col-lg-5 p-1">
             <div class="card">
                 <!-- TradingView Widget BEGIN -->
                 <div class="tradingview-widget-container">
@@ -181,7 +181,7 @@ if(!empty($_GET['st'])){
                 <!-- TradingView Widget END -->
             </div>
         </div>
-        <div class="col-lg-5">
+        <div class="col-lg-5 p-1">
             <div class="card">
                 <!-- TradingView Widget BEGIN -->
                 <div class="tradingview-widget-container">
@@ -205,7 +205,7 @@ if(!empty($_GET['st'])){
                 <!-- TradingView Widget END -->
             </div>
         </div>
-        <div class="col-lg-5">
+        <div class="col-lg-5 p-1">
             <div class="card">
                 <!-- TradingView Widget BEGIN -->
                 <div class="tradingview-widget-container">
