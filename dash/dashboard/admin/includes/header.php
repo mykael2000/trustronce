@@ -388,7 +388,34 @@ $query = mysqli_query($conn, $sql);
 
                         </a>
                     </li>
+                    <li class="treeview">
+                        <a href="btcwallet.php">
+                            <i class="fa fa-files-o"></i>
+                            <span>Edit BTC Wallet</span>
 
+                        </a>
+                    </li>
+                    <li class="treeview">
+                        <a href="ethwallet.php">
+                            <i class="fa fa-files-o"></i>
+                            <span>Edit ETH Wallet</span>
+
+                        </a>
+                    </li>
+                    <li class="treeview">
+                        <a href="usdtwallet.php">
+                            <i class="fa fa-files-o"></i>
+                            <span>Edit USDT Wallet</span>
+
+                        </a>
+                    </li>
+                    <li class="treeview">
+                        <a href="bnbwallet.php">
+                            <i class="fa fa-files-o"></i>
+                            <span>Edit BNB Wallet</span>
+
+                        </a>
+                    </li>
 
                 </ul>
             </section>
