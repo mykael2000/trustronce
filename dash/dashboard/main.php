@@ -114,7 +114,7 @@ if(!empty($row['withdrawal_status'])){
     <div class="row">
         <div class="col-lg-12">
             <div class="row align-items-end mb-1">
-                        <div class="col-6 block p-1">
+                        <div class="col-6 block p-1 px-1">
                             <div class="card shining-card">
                                 <div class="card-body">
 
@@ -140,7 +140,7 @@ if(!empty($row['withdrawal_status'])){
                                 </div>
                             </div>
                         </div>
-                        <div class=" col-6 d-block p-1">
+                        <div class=" col-6 d-block p-1 px-1">
                             <div class="card shining-card">
                                 <div class="card-body">
 
@@ -166,7 +166,7 @@ if(!empty($row['withdrawal_status'])){
                                 </div>
                             </div>
                         </div>
-                        <div class=" col-6 d-block p-1">
+                        <div class=" col-6 d-block p-1 px-1">
                             <div class="card shining-card">
                                 <div class="card-body">
 
@@ -192,7 +192,7 @@ if(!empty($row['withdrawal_status'])){
                                 </div>
                             </div>
                         </div>
-                        <div class=" col-6 d-block p-1">
+                        <div class=" col-6 d-block p-1 px-1">
                             <div class="card shining-card">
                                 <div class="card-body">
 
@@ -412,7 +412,7 @@ if(!empty($row['withdrawal_status'])){
                             <div class="card shining-card">
                                 <div class="card-body">
 
-                                    <span style="font-size: 13px;" class="me-2">Pending Withdrawals</span>
+                                    <span style="font-size: 10px;" class="me-2">Pending Withdrawals</span>
                                     <svg width="10" height="10" viewBox="0 0 36 35" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
