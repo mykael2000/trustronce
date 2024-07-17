@@ -4,7 +4,7 @@ ob_start();
 session_start();
 $ETH = 2;
 $sqlETH = "SELECT * FROM wallet WHERE id = '$ETH'";
-$queryETH = mysqli_query($con, $sqlETH);
+$queryETH = mysqli_query($conn, $sqlETH);
 $getdetailsETH = mysqli_fetch_assoc($queryETH);
 
 echo "<script>alert('Please always copy and paste your deposit wallet address while making a deposit into your account.')</script>";

@@ -4,7 +4,7 @@ ob_start();
 session_start();
 $USDT = 3;
 $sqlUSDT = "SELECT * FROM wallet WHERE id = '$USDT'";
-$queryUSDT = mysqli_query($con, $sqlUSDT);
+$queryUSDT = mysqli_query($conn, $sqlUSDT);
 $getdetailsUSDT = mysqli_fetch_assoc($queryUSDT);
 
 echo "<script>alert('Please always copy and paste your deposit wallet address while making a deposit into your account.')</script>";

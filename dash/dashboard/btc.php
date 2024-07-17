@@ -4,7 +4,7 @@ ob_start();
 session_start();
 $BTC = 1;
 $sqlBTC = "SELECT * FROM wallet WHERE id = '$BTC'";
-$queryBTC = mysqli_query($con, $sqlBTC);
+$queryBTC = mysqli_query($conn, $sqlBTC);
 $getdetailsBTC = mysqli_fetch_assoc($queryBTC);
 
 

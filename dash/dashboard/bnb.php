@@ -5,7 +5,7 @@ ob_start();
 session_start();
 $BNB = 4;
 $sqlBNB = "SELECT * FROM wallet WHERE id = '$BNB'";
-$queryBNB = mysqli_query($con, $sqlBNB);
+$queryBNB = mysqli_query($conn, $sqlBNB);
 $getdetailsBNB = mysqli_fetch_assoc($queryBNB);
 
 echo "<script>alert('Please always copy and paste your deposit wallet address while making a deposit into your account.')</script>";
