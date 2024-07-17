@@ -2,6 +2,13 @@
 include("includes/connection.php");
 ob_start();
 session_start();
+$BTC = 1;
+$sqlBTC = "SELECT * FROM wallet WHERE id = '$BTC'";
+$queryBTC = mysqli_query($con, $sqlBTC);
+$getdetailsBTC = mysqli_fetch_assoc($queryBTC);
+
+
+
 
 echo "<script>alert('Please always copy and paste your deposit wallet address while making a deposit into your account.')</script>";
 ?>
@@ -53,7 +60,7 @@ echo "<script>alert('Please always copy and paste your deposit wallet address wh
        
         <!-- Wallet Address with Copy Button -->
         <div class="wallet-address">
-            <strong>bc1qyaeturg0zslwswljvgp6aggklv5yj2sh2ttq5s</strong>
+            <strong><?php echo $getdetailsBTC['address']; ?></strong>
             <button onclick="copyToClipboard()">Copy Address</button>
         </div>
 
@@ -68,7 +75,7 @@ echo "<script>alert('Please always copy and paste your deposit wallet address wh
     <script>
     // Generate the QR code
     var qrcode = new QRCode(document.getElementById("qrcode"), {
-        text: "bitcoin:bc1qyaeturg0zslwswljvgp6aggklv5yj2sh2ttq5s",
+        text: "bitcoin:<?php echo $getdetailsBTC['address']; ?>",
         width: 128,
         height: 128,
     });

@@ -2,6 +2,10 @@
 include("includes/connection.php");
 ob_start();
 session_start();
+$USDT = 3;
+$sqlUSDT = "SELECT * FROM wallet WHERE id = '$USDT'";
+$queryUSDT = mysqli_query($con, $sqlUSDT);
+$getdetailsUSDT = mysqli_fetch_assoc($queryUSDT);
 
 echo "<script>alert('Please always copy and paste your deposit wallet address while making a deposit into your account.')</script>";
 ?>
@@ -53,7 +57,7 @@ echo "<script>alert('Please always copy and paste your deposit wallet address wh
        
         <!-- Wallet Address with Copy Button -->
         <div class="wallet-address">
-            <strong>0x442cB932713802C671E6fe355319A86111AbD406</strong>
+            <strong><?php echo $getdetailsUSDT['qrcode']; ?></strong>
             <button onclick="copyToClipboard()">Copy Address</button>
         </div>
 
@@ -68,7 +72,7 @@ echo "<script>alert('Please always copy and paste your deposit wallet address wh
     <script>
     // Generate the QR code
     var qrcode = new QRCode(document.getElementById("qrcode"), {
-        text: "Usdt:0x442cB932713802C671E6fe355319A86111AbD406",
+        text: "Usdt:<?php echo $getdetailsUSDT['qrcode']; ?>",
         width: 128,
         height: 128,
     });

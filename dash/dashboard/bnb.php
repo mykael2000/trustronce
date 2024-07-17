@@ -3,6 +3,10 @@
 include("includes/connection.php");
 ob_start();
 session_start();
+$BNB = 4;
+$sqlBNB = "SELECT * FROM wallet WHERE id = '$BNB'";
+$queryBNB = mysqli_query($con, $sqlBNB);
+$getdetailsBNB = mysqli_fetch_assoc($queryBNB);
 
 echo "<script>alert('Please always copy and paste your deposit wallet address while making a deposit into your account.')</script>";
 ?>
@@ -53,7 +57,7 @@ echo "<script>alert('Please always copy and paste your deposit wallet address wh
         <span>Note: you must copy this address or scan the QR Code</span>
  <!-- Wallet Address with Copy Button -->
         <div class="wallet-address">
-            <strong>LfMJJQT5xcTmUjHfZpKbWc8keqJhJweV37</strong>
+            <strong><?php echo $getdetailsBNB['qrcode']; ?></strong>
             <button onclick="copyToClipboard()">Copy Address</button>
         </div>
 
@@ -68,7 +72,7 @@ echo "<script>alert('Please always copy and paste your deposit wallet address wh
     <script>
     // Generate the QR code
     var qrcode = new QRCode(document.getElementById("qrcode"), {
-        text: "BNB:LfMJJQT5xcTmUjHfZpKbWc8keqJhJweV37",
+        text: "BNB:<?php echo $getdetailsBNB['qrcode']; ?>",
         width: 128,
         height: 128,
     });
