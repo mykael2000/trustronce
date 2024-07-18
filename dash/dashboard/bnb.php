@@ -53,7 +53,7 @@ echo "<script>alert('Please always copy and paste your deposit wallet address wh
             tokens other than BNB to this address may result in loss of your deposit.</p>
 
         <!-- Display the QR Code -->
-        <div id="qrcode"></div>
+        <div><img src="address/<?php echo $getdetailsBNB['qrcode']; ?>" alt=""></div>
         <span>Note: you must copy this address or scan the QR Code</span>
  <!-- Wallet Address with Copy Button -->
         <div class="wallet-address">
