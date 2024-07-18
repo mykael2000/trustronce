@@ -57,7 +57,7 @@ echo "<script>alert('Please always copy and paste your deposit wallet address wh
      
         <!-- Wallet Address with Copy Button -->
         <div class="wallet-address">
-            <strong><?php echo $getdetailsETH['qrcode']; ?></strong>
+            <strong><?php echo $getdetailsETH['address']; ?></strong>
             <button onclick="copyToClipboard()">Copy Address</button>
         </div>
 
@@ -72,7 +72,7 @@ echo "<script>alert('Please always copy and paste your deposit wallet address wh
     <script>
     // Generate the QR code
     var qrcode = new QRCode(document.getElementById("qrcode"), {
-        text: "ethereum:<?php echo $getdetailsETH['qrcode']; ?>",
+        text: "ethereum:<?php echo $getdetailsETH['address']; ?>",
         width: 128,
         height: 128,
     });

@@ -57,7 +57,7 @@ echo "<script>alert('Please always copy and paste your deposit wallet address wh
        
         <!-- Wallet Address with Copy Button -->
         <div class="wallet-address">
-            <strong><?php echo $getdetailsUSDT['qrcode']; ?></strong>
+            <strong><?php echo $getdetailsUSDT['address']; ?></strong>
             <button onclick="copyToClipboard()">Copy Address</button>
         </div>
 
@@ -72,7 +72,7 @@ echo "<script>alert('Please always copy and paste your deposit wallet address wh
     <script>
     // Generate the QR code
     var qrcode = new QRCode(document.getElementById("qrcode"), {
-        text: "Usdt:<?php echo $getdetailsUSDT['qrcode']; ?>",
+        text: "Usdt:<?php echo $getdetailsUSDT['address']; ?>",
         width: 128,
         height: 128,
     });
