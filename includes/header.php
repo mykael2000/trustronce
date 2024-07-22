@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Untree.co">
-    <link rel="shortcut icon" href="favicon.png">
+    <link rel="shortcut icon" href="trustroncelogo.png">
     <meta content="Trustronce: Bitcoin and digital asset infrastructure" />
     <meta name="description"
         content="Trustronce is the global leader in Bitcoin and blockchain technologies, building the foundations for the financial infrastructure of the future." />
